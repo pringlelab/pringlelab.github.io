@@ -12,11 +12,58 @@
     <style>
         /* Custom class for profile pictures */
         .profile-picture {
-            width: 200px !important;/* Set the desired width */
-            height: auto !important;/* Set the desired height */
-            object-fit: cover !important; /* Ensure the image covers the entire area */
-            box-sizing: border-box !important; /* Explicitly set box-sizing */
-            overflow: hidden !important; /* Explicitly set overflow */
+            width: 250px; /* Set the desired width */
+            height: 250px; /* Set the desired height */
+            object-fit: cover; /* Ensure the image covers the entire area */
+            border-radius: 50%; /* Make the profile pictures circular */
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+    
+        .profile-picture:hover {
+            transform: scale(1.3); /* Scale up the image on hover */
+        }
+    
+        .team-member {
+            display: flex;
+            align-items: center;
+            background-color: #00000038;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.998);
+            transition: box-shadow 0.3s;
+        }
+    
+        .team-member:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.663);
+        }
+    
+        .team-member div {
+            margin-left: 20px;
+        }
+    
+        .team-member p {
+            margin: 5px 0;
+        }
+    
+        .team-member a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+    
+        .team-member a:hover {
+            color: #ff6347;
+        }
+    
+        .team-member strong {
+            font-size: 1.2em;
+        }
+    
+        .team-member hr {
+            width: 100%;
+            border: 0;
+            border-top: 1px solid #44444447;
         }
     </style>
 </head>
@@ -52,16 +99,14 @@
                 <img class="profile-picture" src="https://pringlelab.github.io/images/AnneAction.jpg" alt="Anne">
                 <div>
                     <p class="w3-text-light-grey"><strong>Anne Pringle</strong> – <a
-                            href="mailto:apringle2@wisc.edu">apringle2@wisc.edu</a></p>
+                            href="mailto:apringle2@wisc.edu"><i class="fa fa-envelope"></i> apringle2@wisc.edu</a></p>
                     <p class="w3-text-light-grey">Letters & Science Mary Herman Rubinstein Professor</p>
                     <p class="w3-text-light-grey">Vilas Distinguished Achievement Professor</p>
                     <p class="w3-text-light-grey">Departments of <a
                             href="https://botany.wisc.edu/staff/pringle-anne/">Botany</a> & <a
                             href="https://bact.wisc.edu/people_profile.php?t=rf&p=apringle2">Bacteriology</a></p>
-                    <p class="w3-text-light-grey">You can download my <a href="documents/CV_modern_Pringle.pdf">current
-                            C.V. here</a></p>
                     <p class="w3-text-light-grey"><a
-                            href="https://scholar.google.com/citations?user=J718FGIAAAAJ&hl=en">Google Scholar</a></p>
+                            href="https://scholar.google.com/citations?user=J718FGIAAAAJ&hl=en"><i class="fa fa-google"></i> Google Scholar</a></p>
                 </div>
             </div>
         </section>
@@ -74,7 +119,7 @@
                 <img class="profile-picture" src="https://pringlelab.github.io/images/Naamon.jpeg" alt="Naamon">
                 <div>
                     <p class="w3-text-light-grey"><strong>Naamon Peyton</strong> – <a
-                            href="mailto:npeyton@wisc.edu">npeyton@wisc.edu</a></p>
+                            href="mailto:npeyton@wisc.edu"><i class="fa fa-envelope"></i> npeyton@wisc.edu</a></p>
                     <p class="w3-text-light-grey">I am a first-year undergraduate student in the Pringle Lab. My current
                         research is surveying the fungi of UW-Madison's Lakeshore Nature Preserve and working with
                         Savannah Gentry to create a field guide specific to the fungi that I encounter. I am interested
@@ -88,7 +133,7 @@
                     alt="Corbin">
                 <div>
                     <p class="w3-text-light-grey"><strong>Corbin Bryan</strong> – <a
-                            href="mailto:bryan7@wisc.edu">bryan6@wisc.edu</a></p>
+                            href="mailto:bryan7@wisc.edu"><i class="fa fa-envelope"></i> bryan6@wisc.edu</a></p>
                     <p class="w3-text-light-grey">I am a first-year PhD student in the Pringle Lab interested in
                         investigating fungal species delineations, fungal co-invasions, and the evolution of fungal
                         secondary metabolites using genomics approaches. Outside of the lab, I enjoy playing the Viola
@@ -101,7 +146,7 @@
                 <img class="profile-picture" src="https://pringlelab.github.io/images/IMG-1536.jpg" alt="Cecelia">
                 <div>
                     <p class="w3-text-light-grey"><strong>Cecelia Stokes</strong> – <a
-                            href="mailto:ckstokes@wisc.edu">ckstokes@wisc.edu</a></p>
+                            href="mailto:ckstokes@wisc.edu"><i class="fa fa-envelope"></i> ckstokes@wisc.edu</a></p>
                     <p class="w3-text-light-grey">I am interested in the ecology of invasive ectomycorrhizal fungi. I
                         plan to examine <em>Amanita phalloides</em> interactions with insect populations, native
                         ectomycorrhizal fungi, and mutualistic hosts within their non-native range. Additionally, I hope
@@ -114,7 +159,7 @@
                 <img class="profile-picture" src="https://pringlelab.github.io/images/Aishwarya.jpg" alt="Aishwarya">
                 <div>
                     <p class="w3-text-light-grey"><strong>Aishwarya Veerabahu</strong> – <a
-                            href="mailto:veerabahu@wisc.edu">veerabahu@wisc.edu</a></p>
+                            href="mailto:veerabahu@wisc.edu"><i class="fa fa-envelope"></i> veerabahu@wisc.edu</a></p>
                     <p class="w3-text-light-grey">Aishwarya earned her B.S. in Biology from the chaparral hills of UC
                         Riverside in Southern California. After graduating, her passion for ecology led her to become a
                         naturalist and an environmental educator. After spending time in the rich forests of the
@@ -134,7 +179,7 @@
                 <img class="profile-picture" src="https://pringlelab.github.io/images/Holly2.jpg" alt="Holly">
                 <div>
                     <p class="w3-text-light-grey"><strong>Holly Elmore</strong> – <a
-                            href="mailto:m.holly.elmore@gmail.com">m.holly.elmore@gmail.com</a></p>
+                            href="mailto:m.holly.elmore@gmail.com"><i class="fa fa-envelope"></i> m.holly.elmore@gmail.com</a></p>
                     <p class="w3-text-light-grey">I am broadly interested in the evolution of eukaryotic genomes. I
                         study genome organization in fungi, particularly as it relates to the bizarre diversity of
                         fungal mating systems. For my thesis, I am investigating the mating loci of several species of
@@ -149,7 +194,7 @@
                 <img class="profile-picture" src="https://pringlelab.github.io/images/Cat2.jpg" alt="Cat">
                 <div>
                     <p class="w3-text-light-grey"><strong>Cat Adams</strong> – <a
-                            href="mailto:catadams@berkeley.edu">catadams@berkeley.edu</a></p>
+                            href="mailto:catadams@berkeley.edu"><i class="fa fa-envelope"></i> catadams@berkeley.edu</a></p>
                     <p class="w3-text-light-grey">Cat Adams is a PhD student at UC Berkeley, researching the role of
                         secondary metabolites in plant-fungal interactions. Her Masters work with Anne examined the
                         evolution of spice tolerance in fungal pathogens of wild chili peppers. For her PhD, Cat is
@@ -163,7 +208,7 @@
                 <img class="profile-picture" src="https://pringlelab.github.io/images/goncal2.jpeg" alt="Susana">
                 <div>
                     <p class="w3-text-light-grey"><strong>Susana C. Gonçalves</strong> – <a
-                            href="mailto:scgoncal@uc.pt">scgoncal@uc.pt</a></p>
+                            href="mailto:scgoncal@uc.pt"><i class="fa fa-envelope"></i> scgoncal@uc.pt</a></p>
                     <p class="w3-text-light-grey">I am broadly interested in the ecology and evolution of
                         ectomycorrhizal fungi, focusing on the population dynamics of <em>Amanita phalloides</em> and
                         <em>Amanita muscaria</em>, in particular. For my postdoctoral project, I am investigating what

@@ -8,13 +8,33 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://pringlelab.github.io/styles.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="https://pringlelab.github.io/styles.css">
+    <style>
+        .section {
+            margin-bottom: 64px;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .image-gallery img {
+            max-width: 288px;
+            max-height: 216px;
+            width: auto;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body class="w3-black">
 
     <!-- Placeholder for the sidebar -->
     <div id="sidebar-placeholder"></div>
+
     <!-- Load the sidebar using JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -25,6 +45,7 @@
                 });
         });
     </script>
+
     <!-- Include the random background script -->
     <script src="https://pringlelab.github.io/randombackground.js"></script>
 
@@ -32,55 +53,58 @@
 
         <!-- Page Content -->
         <div class="w3-padding-large" id="main">
+
             <!-- Header/Home -->
-            <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <header class="w3-container w3-padding-32 w3-center" id="home">
                 <h1 class="w3-jumbo"><span class="w3-hide-small">The Pringle Laboratory</span></h1>
                 <p class="w3-xlarge">Recent Outreach</p>
-                <img src="images/mushycut.gif" alt="musc" class="w3-image" style="width:320px;height:400px;">
+                <img src="https://pringlelab.github.io/images/mushycut.gif" alt="musc" class="w3-image" style="width:320px;height:400px;">
             </header>
 
             <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-                <h2 class="w3-text-light-grey">
-                    <a href="https://sites.google.com/view/themycologicalmenagerie/home?pli=1">The Mycological Menagerie
-                        2023</a>
-                </h2>
-                <hr style="width:200px" class="w3-opacity">
-                <video controls class="w3-image" style="width:440px;height:390px;">
-                    <iframe width="440" height="390" src="https://www.youtube.com/embed/auXP9MJFcDM?si=T2Ln8uXYu3hfxhvR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </video>
-                <p class="w3-xlarge">
-                    Pringle lab members, Savannah Gentry, Nora Dunkirk, and Naamon Peyton, proposed and successfully
-                    funded a fungal-inspired art gallery with the
-                    <a href="https://artsdivision.wisc.edu/programs/abc/">Arts and Business Competition</a>.
-                </p>
-                <img src="https://pringlelab.github.io/images/mycomeng.jpg" alt="mycomeng" class="w3-image" style="width:440px;height:390px;">
-                <br><br><br><br>
+                <div class="section">
+                    <h2 class="w3-text-light-grey">
+                        <a href="https://sites.google.com/view/themycologicalmenagerie/home?pli=1">The Mycological Menagerie 2023</a>
+                    </h2>
+                    <hr style="width:200px" class="w3-opacity">
+                    <iframe width="440" height="390" src="https://www.youtube.com/embed/auXP9MJFcDM?si=T2Ln8uXYu3hfxhvR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="w3-xlarge">
+                        Pringle lab members, Savannah Gentry, Nora Dunkirk, and Naamon Peyton, proposed and successfully funded a fungal-inspired art gallery with the
+                        <a href="https://artsdivision.wisc.edu/programs/abc/">Arts and Business Competition</a>.
+                    </p>
+                    <img src="https://pringlelab.github.io/images/mycomeng.jpg" alt="mycomeng" class="w3-image" style="width:440px;height:390px;">
+                </div>
 
-                <h2 class="w3-text-light-grey">Wisconsin Science Festival 2021</h2>
-                <hr style="width:200px" class="w3-opacity">
-                <p class="w3-xlarge">
-                    An annual four-day celebration of science with the public. Join us to learn how the mushroom got its
-                    spots, create a science notebook, and dive into fungal identification.
-                </p>
-                <img src="https://pringlelab.github.io/images/Science2021.jpg" alt="musc" class="w3-image" style="width:440px;height:400px;">
-                <img src="https://pringlelab.github.io/images/Outreach2021.jpg" alt="musc" class="w3-image" style="width:200px;height:400px;">
-                <img src="https://pringlelab.github.io/images/mushy.jpg" alt="musc" class="w3-image" style="width:340px;height:400px;">
-                <br><br><br><br>
+                <div class="section">
+                    <h2 class="w3-text-light-grey">Wisconsin Science Festival 2021</h2>
+                    <hr style="width:200px" class="w3-opacity">
+                    <p class="w3-xlarge">
+                        An annual four-day celebration of science with the public. Join us to learn how the mushroom got its spots, create a science notebook, and dive into fungal identification.
+                    </p>
+                    <div class="image-gallery">
+                        <img src="https://pringlelab.github.io/images/Science2021.jpg" alt="Science Festival 2021" class="w3-image">
+                        <img src="https://pringlelab.github.io/images/Outreach2021.jpg" alt="Outreach 2021" class="w3-image">
+                        <img src="https://pringlelab.github.io/images/mushy.jpg" alt="Mushroom" class="w3-image">
+                    </div>
+                </div>
 
-                <h2 class="w3-text-light-grey">Darwin Day 2016</h2>
-                <hr style="width:200px" class="w3-opacity">
-                <p class="w3-xlarge">
-                    A research experience extravaganza for K-12 students in collaboration with the J.F. Crow Institute
-                    for the Study of Evolution.
-                </p>
-                <img src="https://pringlelab.github.io/images/a.JPG" alt="musc" class="w3-image" style="width:288px;height:216px;">
-                <img src="https://pringlelab.github.io/images/bb.jpg" alt="musc" class="w3-image" style="width:200px;height:216px;">
-                <img src="https://pringlelab.github.io/images/c.JPG" alt="musc" class="w3-image" style="width:288px;height:216px;">
-                <br><br>
+                <div class="section">
+                    <h2 class="w3-text-light-grey">Darwin Day 2016</h2>
+                    <hr style="width:200px" class="w3-opacity">
+                    <p class="w3-xlarge">
+                        A research experience extravaganza for K-12 students in collaboration with the J.F. Crow Institute for the Study of Evolution.
+                    </p>
+                    <div class="image-gallery">
+                        <img src="https://pringlelab.github.io/images/a.jpeg" alt="Darwin Day 2016 - 1" class="w3-image">
+                        <img src="https://pringlelab.github.io/images/bb.jpg" alt="Darwin Day 2016 - 2" class="w3-image">
+                        <img src="https://pringlelab.github.io/images/c.jpeg" alt="Darwin Day 2016 - 3" class="w3-image">
+                    </div>
+                </div>
+            </div>
 
-
+        </div>
 
     </main>
-
 
 </body>
 
