@@ -8,62 +8,24 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Montserrat", sans-serif;
-        }
-
-        .w3-row-padding img {
-            margin-bottom: 12px;
-        }
-
-        .w3-sidebar {
-            width: 120px;
-            background: #646569;
-        }
-
-        #main {
-            margin-left: 80px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            #main {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 
 <body class="w3-black">
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-        <img src="images/UW_logo.png" alt="UW Logo" style="width: 100%;">
-        <a href="https://pringlelab.github.io/index.html" class="w3-bar-item w3-button">HOME</a>
-        <a href="https://pringlelab.github.io/people/index.html" class="w3-bar-item w3-button">PEOPLE</a>
-        <a href="https://pringlelab.github.io/publications/index.html" class="w3-bar-item w3-button">PUBS</a>
-        <a href="https://pringlelab.github.io/links/index.html" class="w3-bar-item w3-button">LINKS</a>
-        <a href="https://pringlelab.github.io/amanita/index.html" class="w3-bar-item w3-button">GENOMES</a>
-        <a href="https://pringlelab.github.io/outreach/index.html" class="w3-bar-item w3-button">RECENT OUTREACH</a>
-    </nav>
-
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="https://pringlelab.github.io/index.html" class="w3-bar-item w3-button" style="width: 25%;">HOME</a>
-            <a href="https://pringlelab.github.io/people/index.html" class="w3-bar-item w3-button"
-                style="width: 25%;">PEOPLE</a>
-            <a href="https://pringlelab.github.io/publications/index.html" class="w3-bar-item w3-button"
-                style="width: 25%;">PUBS</a>
-            <a href="https://pringlelab.github.io/links/index.html" class="w3-bar-item w3-button"
-                style="width: 25%;">LINKS</a>
-            <a href="https://pringlelab.github.io/outreach/index.html" class="w3-bar-item w3-button"
-                style="width: 25%;">RECENT OUTREACH</a>
-        </div>
-    </div>
+    <!-- Placeholder for the sidebar -->
+    <div id="sidebar-placeholder"></div>
+    <!-- Load the sidebar using JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../sidebar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("sidebar-placeholder").innerHTML = data;
+                });
+        });
+    </script>
+    <!-- Include the random background script -->
+    <script src="randomBackground.js"></script>
 
     <main class="w3-padding-large" id="main">
         <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
@@ -78,7 +40,7 @@
 
         <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
             <h2 class="w3-text-light-grey">About Us</h2>
-            <hr style="width: 200px;" class="w3-opacity">
+            <hr class="w3-opacity">
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=hFsK0Ixb_9g" target="_blank">Pringle Lab Video</a></li>
             </ul>
@@ -88,75 +50,13 @@
                 evolution.</p>
         </section>
 
-        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="study">
-            <h2 class="w3-text-light-grey">What We Study</h2>
-            <hr style="width: 200px;" class="w3-opacity">
-            <table class="w3-table w3-bordered w3-centered">
-                <tr>
-                    <td>
-                        <a href="https://pringlelab.github.io/dispersal/index.html">
-                            <img src="images/512x256_13000fps_modified_8fps_20frames_cropped_reduced.gif"
-                                alt="Ascobolus spores being launched from ascus.">
-                            <p>Dispersal</p>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://pringlelab.github.io/ecology/index.html">
-                            <img src="images/dentatus_button.png"
-                                alt="A population of Coccomyces dentatus growing on a leaf. Individuals are delineated by black lines, signalling antagonistic interactions."
-                                width="128" height="128">
-                            <p>Population Biology of Modular Organisms</p>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://pringlelab.github.io/mutualism/index.html">
-                            <img src="images/spores_button.png"
-                                alt="Spores of arbuscular mycorrhizal fungi from a North Carolina field." width="128"
-                                height="128">
-                            <p>Cooperation and Interactions</p>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://pringlelab.github.io/symbiosis/index.html">
-                            <img src="images/copia_tree_button.jpg"
-                                alt="A phylogeny of one group of transposable elements in Amanita." width="128"
-                                height="128">
-                            <p>Genetic Architecture of Symbiosis</p>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://pringlelab.github.io/invasion/index.html">
-                            <img src="images/amanita_flyer_button_128.png" alt="Mutualism and Invasion">
-                            <p>Invasion Biology &amp; Conservation of Fungi</p>
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </section>
-
-        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="news">
-            <h2 class="w3-text-light-grey">The Lab in the News</h2>
-            <hr style="width: 200px;" class="w3-opacity">
-            <a href="http://pringlelab.botany.wisc.edu/media.php">
-                <img src="images/Huron.jpg" alt="Huron" width="280" height="280">
-                <p class="w3-xlarge">Check us out!</p>
-            </a>
-        </section>
-
-        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="amanitabase">
-            <h2 class="w3-text-light-grey">AmanitaBASE</h2>
-            <hr style="width: 200px;" class="w3-opacity">
-            <a href="http://pringlelab.botany.wisc.edu/amanitabase/#">
-                <p class="w3-xlarge">Our <em>Amanita</em> collections</p>
-            </a>
-        </section>
-
         <footer class="w3-content w3-justify w3-text-grey w3-padding-64">
             <p class="w3-center">Mushroom poisoning? The Wisconsin Poison Center provides telephone assistance to people
                 concerned about poisonings 24 hours a day, 7 days a week, 365 days a year. Call toll-free
                 1-800-222-1222.</p>
         </footer>
     </main>
+
 </body>
 
 </html>

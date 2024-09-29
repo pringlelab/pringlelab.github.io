@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pringle Lab UW-Madison</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body class="w3-black">
+    <!-- Placeholder for the sidebar -->
+    <div id="sidebar-placeholder"></div>
+    <!-- Load the sidebar using JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../sidebar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("sidebar-placeholder").innerHTML = data;
+                });
+        });
+    </script>
+
+    <!-- Main content -->
+    <main id="main">
+        <section class="media-list-container">
+            <h2 class="header">Selected Press</h2>
+            <div class="media-grid">
+                <div class="media-item">
+                    <h3>Madison Audubon Society 2022</h3>
+                    <p><a href="https://www.youtube.com/watch?v=O1GWE5s-4tM"><em>Fungal Conservation</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Wisconsin Public Radio's Central Time 2021</h3>
+                    <p><a href="https://www.youtube.com/watch?v=O1GWE5s-4tM"><em>The wild world of Wisconsin
+                                mycology</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>National Geographic 2021</h3>
+                    <p><a
+                            href="https://www.nationalgeographic.com/environment/article/fungi-are-key-to-survival-are-we-doing-enough-to-protect-them"><em>Fungi
+                                are key to our survival. Are we doing enough to protect them?</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>National Public Radio KQED 2021</h3>
+                    <p><a
+                            href="https://dothebay.com/events/2021/2/17/from-mites-on-drones-to-deadly-mushrooms-a-deep-look-screening-tickets"><em>From
+                                mites on drones to deadly mushrooms</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Wired Magazine 2019</h3>
+                    <p><a href="https://www.wired.com/video/watch/mycologist-explains-how-a-slime-mold-can-solve-mazes"><em>Mycologist
+                                explains how a slime mold can solve mazes</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>UW-Madison News 2018</h3>
+                    <p><a
+                            href="https://news.wisc.edu/foray-draws-scientists-to-wisconsin-in-search-of-mushrooms-fellowship/"><em>Foray
+                                draws scientists to Wisconsin in search of mushrooms</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Blue Sky Science: How do you identify edible mushrooms?</h3>
+                    <p><a href="https://www.wpr.org/wild-world-wisconsin-mycology"><em>Wisconsin State Journal</em></a>
+                    </p>
+                </div>
+                <div class="media-item">
+                    <h3>Desde Colombia, <em>El Independiente</em>, escribe sobre Levitis et al. (2017)</h3>
+                    <p><a
+                            href="https://www.elindependiente.com/futuro/2017/08/02/los-inconvenientes-la-reproduccion-sexual/"><em>Los
+                                inconvenientes de la reproducción sexual</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Madison's own newspaper, <em>Isthmus</em>, publishes on Levitis et al.'s (2017) work on the cost
+                        of sex</h3>
+                    <p><a
+                            href="https://isthmus.com/news/news/uw-researcher-finds-humans-not-alone-in-suffering-pregnancy-loss/"><em>The
+                                universal cost of sex</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>The New York Times covers Pringle lab research on Spore Physics</h3>
+                    <p><a href="https://www.nytimes.com/2017/07/27/science/fungi-mushrooms-spores.html"><em>Fungi
+                                Physics: How Those Spores Launch Just Right</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Phys.org highlights Dan Levitis et al. work</h3>
+                    <p><a href="https://phys.org/news/2017-08-pregnancy-loss-evolution-sex-linked.html"><em>Pregnancy
+                                loss and the evolution of sex are linked by cellular line dance</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>The Atlantic covers Pringle lab research</h3>
+                    <p><a href="https://www.theatlantic.com/science/archive/2017/05/mushrooms-climate-change/528483/"><em>Amanita
+                                thiersii</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>KQED Features the Pringle Lab in California in</h3>
+                    <p><a
+                            href="http://ww2.kqed.org/science/2016/02/23/this-mushroom-starts-killing-you-before-you-even-realize-it/"><em>KQED
+                                Science</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Syrian Refugee Crisis and the Death Cap in</h3>
+                    <p><a
+                            href="http://www.nytimes.com/2015/09/18/world/europe/migrant-refugee-crisis-poisoning-cases-death-cap-mushrooms.html"><em>New
+                                York Times</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Cat's article in</h3>
+                    <p><a
+                            href="http://www.slate.com/articles/health_and_science/medical_examiner/2014/02/most_dangerous_mushroom_death_cap_is_spreading_but_poisoning_can_be_treated.html"><em>Slate</em></a>
+                    </p>
+                </div>
+                <div class="media-item">
+                    <h3>The New York Times' <em>Science Times</em></h3>
+                    <p><a
+                            href="http://www.nytimes.com/2013/01/01/science/studying-seemingly-immortal-lichens-in-a-place-for-the-dead.html?pagewanted=all&amp;_r=0"><em>Science
+                                Times</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Filmed for NOVA's <em>scienceNOW</em></h3>
+                    <p><a href="http://www.pbs.org/wgbh/nova/nature/what-animals-thinking.html"><em>scienceNOW</em></a>
+                    </p>
+                </div>
+                <div class="media-item">
+                    <h3>The Polish newspaper <em>Gazeta Wyborcza</em></h3>
+                    <p><a href="http://wyborcza.pl/1,75476,11779705,Grzyby__jak_wykorzystac_podziemne_imperium.html"><em>Gazeta
+                                Wyborcza</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Za and <em>Science in the News</em></h3>
+                    <p><a href="https://sitn.hms.harvard.edu/sitnflash_wp/2011/12/barron_interview/"><em>Science in the
+                                News</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>The NPR program <em>Living on Earth</em></h3>
+                    <p><a href="http://www.loe.org/shows/segments.html?programID=11-P13-00010&amp;segmentID=5"><em>Living
+                                on Earth</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>The German newspaper <em>Spiegel Online</em></h3>
+                    <p><a
+                            href="http://www.spiegel.de/wissenschaft/natur/aerodynamische-tricks-pilzsporen-surfen-auf-luftstroemung-a-720015.html"><em>Spiegel
+                                Online</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>This article in <em>The Scientist</em></h3>
+                    <p><a href="http://classic.the-scientist.com/?articles.view/articleNo/29288/"><em>The
+                                Scientist</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>The Harvard, MA town newspaper <em>The Harvard Press</em></h3>
+                    <p><a
+                            href="http://www.harvardpress.com/Features/Recipes/tabid/2186/ID/5851/Students_find_life_in_the_cemetery.aspx"><em>The
+                                Harvard Press</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>The NPR program <em>All Things Considered</em></h3>
+                    <p><a href="http://www.npr.org/templates/story/story.php?storyId=7251327"><em>All Things
+                                Considered</em></a></p>
+                </div>
+                <div class="media-item">
+                    <h3>Articles in the <em>Harvard Gazette</em></h3>
+                    <p><a href="http://news.harvard.edu/gazette/tag/anne-pringle/"><em>Harvard Gazette</em></a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

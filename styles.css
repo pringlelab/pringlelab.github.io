@@ -1,0 +1,96 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px;
+}
+
+.w3-sidebar {
+    width: 120px;
+    background: #390a0a;
+}
+
+/* General styles for the main content */
+#main {
+    margin-left: 140px; /* Adjust this value as needed */
+    padding: 20px;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    body {
+        width: 100%; /* Ensure the body takes full width */
+        margin: 0; /* Remove any default margin */
+    }
+    #main {
+        margin-left: 0; /* Remove left margin for small screens */
+        padding: 10px; /* Adjust padding for small screens */
+        width: 100%; /* Ensure the content takes full width */
+    }
+    .w3-content {
+        width: 100%; /* Ensure content takes full width */
+    }
+    .w3-justify {
+        text-align: justify; /* Ensure text is justified */
+    }
+    header {
+        padding: 16px; /* Reduce padding for small screens */
+    }
+    header h1 {
+        font-size: 2em; /* Adjust font size for small screens */
+    }
+    header p {
+        font-size: 1.2em; /* Adjust font size for small screens */
+    }
+    header img {
+        width: 100%; /* Ensure the image takes full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Media Grid Styling */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.media-item {
+    background-color: #351c01;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.media-item h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.media-item p {
+    margin: 0;
+}
+
+.media-item a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.media-item a:hover {
+    text-decoration: underline;
+}
+
+.media-item:hover {
+    transform: translateY(-5px);
+}

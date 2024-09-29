@@ -8,97 +8,22 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Montserrat", sans-serif;
-        }
-
-        .w3-sidebar {
-            width: 120px;
-            background: #646569;
-        }
-
-        #main {
-            margin-left: 120px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            #main {
-                margin-left: 0;
-            }
-        }
-
-        .team-member {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-
-        .team-member img {
-            margin-right: 15px;
-            width: 200px;
-            height: 200px;
-        }
-
-        .team-member p {
-            margin: 0;
-        }
-
-        .team-member hr {
-            width: 100%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to the external CSS file -->
 </head>
 
 <body class="w3-black">
-    <!-- Sidebar for navigation (hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-        <br><br>
-        <!-- Avatar image in top left corner -->
-        <img src="../images/UW_logo.png" alt="UW Logo" style="width: 100%;">
-        <br>
-        <a href="https://pringlelab.github.io/index.html">
-            <p>HOME</p>
-        </a>
-        <br><br>
-        <a href="https://pringlelab.github.io/people/index.html">
-            <p>PEOPLE</p>
-        </a>
-        <br><br>
-        <a href="https://pringlelab.github.io/publications/index.html">
-            <p>PUBS</p>
-        </a>
-        <br><br>
-        <a href="https://pringlelab.github.io/links/index.html">
-            <p>LINKS</p>
-        </a>
-        <br><br>
-        <a href="https://pringlelab.github.io/amanita/amanitaproject.html">
-            <p>GENOMES</p>
-        </a>
-        <br>
-        <a href="https://pringlelab.github.io/outreach/Recent_Outreach.html">
-            <p>RECENT OUTREACH</p>
-        </a>
-    </nav>
-
-    <!-- Navbar for small screens -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="https://pringlelab.github.io/index.html" class="w3-bar-item w3-button" style="width: 25% !important">HOME</a>
-            <a href="https://pringlelab.github.io/people/index.html" class="w3-bar-item w3-button" style="width: 25% !important">PEOPLE</a>
-            <a href="https://pringlelab.github.io/publications/index.html" class="w3-bar-item w3-button" style="width: 25% !important">PUBS</a>
-            <a href="https://pringlelab.github.io/links/index.html" class="w3-bar-item w3-button" style="width: 25% !important">LINKS</a>
-        </div>
-    </div>
+    <!-- Placeholder for the sidebar -->
+    <div id="sidebar-placeholder"></div>
+    <!-- Load the sidebar using JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../sidebar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("sidebar-placeholder").innerHTML = data;
+                });
+        });
+    </script>
 
     <!-- Main content -->
     <div class="w3-padding-large" id="main">

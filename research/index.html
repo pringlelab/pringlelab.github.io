@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pringle Lab UW-Madison</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body class="w3-black">
+
+    <!-- Placeholder for the sidebar -->
+    <div id="sidebar-placeholder"></div>
+
+    <main class="w3-padding-large" id="main">
+        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="study">
+            <h2 class="w3-text-light-grey">What We Study</h2>
+            <hr class="w3-opacity">
+            <table class="w3-table w3-bordered w3-centered">
+                <tr>
+                    <td>
+                        <a href="https://pringlelab.github.io/dispersal/index.html">
+                            <img src="../images/512x256_13000fps_modified_8fps_20frames_cropped_reduced.gif"
+                                alt="Ascobolus spores being launched from ascus.">
+                            <p>Dispersal</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://pringlelab.github.io/ecology/index.html">
+                            <img src="../images/dentatus_button.png"
+                                alt="A population of Coccomyces dentatus growing on a leaf. Individuals are delineated by black lines, signalling antagonistic interactions."
+                                width="128" height="128">
+                            <p>Population Biology of Modular Organisms</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://pringlelab.github.io/mutualism/index.html">
+                            <img src="../images/spores_button.png"
+                                alt="Spores of arbuscular mycorrhizal fungi from a North Carolina field." width="128"
+                                height="128">
+                            <p>Cooperation and Interactions</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://pringlelab.github.io/symbiosis/index.html">
+                            <img src="../images/copia_tree_button.jpg"
+                                alt="A phylogeny of one group of transposable elements in Amanita." width="128"
+                                height="128">
+                            <p>Genetic Architecture of Symbiosis</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://pringlelab.github.io/invasion/index.html">
+                            <img src="../images/amanita_flyer_button_128.png" alt="Mutualism and Invasion">
+                            <p>Invasion Biology &amp; Conservation of Fungi</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="amanitabase">
+            <h2 class="w3-text-light-grey">AmanitaBASE</h2>
+            <hr class="w3-opacity">
+            <a href="http://pringlelab.botany.wisc.edu/amanitabase/#">
+                <p class="w3-xlarge">Our <em>Amanita</em> collections</p>
+            </a>
+        </section>
+
+        <footer class="w3-content w3-justify w3-text-grey w3-padding-64">
+            <p class="w3-center">Mushroom poisoning? The Wisconsin Poison Center provides telephone assistance to people
+                concerned about poisonings 24 hours a day, 7 days a week, 365 days a year. Call toll-free
+                1-800-222-1222.</p>
+        </footer>
+        
+    </main>
+
+    <!-- Load the sidebar using JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("../sidebar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("sidebar-placeholder").innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>
