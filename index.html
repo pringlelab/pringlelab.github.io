@@ -1,166 +1,328 @@
 <!DOCTYPE html>
-<html><head><title>Pringle Lab UW-Madison</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+  <head>
+    <title>Pringle Lab UW-Madison</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #646569;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 80px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .w3-row-padding img {
+        margin-bottom: 12px;
+      }
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {
+        width: 120px;
+        background: #646569;
+      }
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main {
+        margin-left: 80px;
+      }
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {
+        #main {
+          margin-left: 0;
+        }
+      }
     </style>
-    </head><body class="w3-black">
-    
-    
-    
-    
-    
+  </head>
+  <body class="w3-black">
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-        <br><br>
-        
+      <br /><br />
+
       <!-- Avatar image in top left corner -->
-      <img src="images/UW_logo.png" style="width:100%">
-      
-       
-       <br>
-       <a href="http://pringlelab.botany.wisc.edu/index.php#">
+      <img src="images/UW_logo.png" style="width: 100%" />
+
+      <br />
+      <a href="http://pringlelab.botany.wisc.edu/index.php#">
         <!--i class="fa fa-home w3-xxlarge"></i>-->
-           <p><font size="4"> HOME </font></p>
+        <p><font size="4"> HOME </font></p>
       </a>
-        <br>
-      <br>
-       <a href="http://pringlelab.botany.wisc.edu/people.php#">
+      <br />
+      <br />
+      <a href="http://pringlelab.botany.wisc.edu/people.php#">
         <!--i class="fa fa-user w3-xxlarge"></i> -->
-           <p><font size="4">PEOPLE</font></p>
+        <p><font size="4">PEOPLE</font></p>
       </a>
-      <br>
-      <br>
-    <a href="http://pringlelab.botany.wisc.edu/publications.php#">
-           <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
+      <br />
+      <br />
+      <a href="http://pringlelab.botany.wisc.edu/publications.php#">
+        <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
         <p><font size="4">PUBS</font></p>
       </a>
-       <br>
-      <br>
-       <a href="http://pringlelab.botany.wisc.edu/links.php#">
+      <br />
+      <br />
+      <a href="http://pringlelab.botany.wisc.edu/links.php#">
         <!--<i class="images/UW.png"></i>-->
-           <p><font size="4">LINKS</font></p>
+        <p><font size="4">LINKS</font></p>
       </a>
-      <br>
-      <br>
+      <br />
+      <br />
       <a href="http://pringlelab.botany.wisc.edu/amanita/amanitaproject.html">
-       <!-- <i class="fa fa-envelope w3-xxlarge"></i>-->
-          <p><font size="4">GENOMES</font></p>
+        <!-- <i class="fa fa-envelope w3-xxlarge"></i>-->
+        <p><font size="4">GENOMES</font></p>
       </a>
-      
-     <br>
+
+      <br />
       <a href="http://pringlelab.botany.wisc.edu/Recent_Outreach.php#">
-       <!-- <i class="fa fa-envelope w3-xxlarge"></i>-->
-          <p><font size="4">RECENT OUTREACH</font></p>
+        <!-- <i class="fa fa-envelope w3-xxlarge"></i>-->
+        <p><font size="4">RECENT OUTREACH</font></p>
       </a>
     </nav>
-    <br>
-    
-    
-    
-    
+    <br />
+
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="http://pringlelab.botany.wisc.edu/index.php#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-        <a href="http://pringlelab.botany.wisc.edu/people.php#" class="w3-bar-item w3-button" style="width:25% !important">PEOPLE</a>
-        <a href="http://pringlelab.botany.wisc.edu/publications.php#" class="w3-bar-item w3-button" style="width:25% !important">PUBS</a>
-        <a href="http://pringlelab.botany.wisc.edu/links.php#" class="w3-bar-item w3-button" style="width:25% !important">LINKS</a>
-        <a href="http://pringlelab.botany.wisc.edu/Recent_Outreach.php#" class="w3-bar-item w3-button" style="width:25% !important">RECENT OUTREACH</a>
+      <div
+        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+      >
+        <a
+          href="https://pringlelab.github.io/index.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >HOME</a
+        >
+        <a
+          href="https://pringlelab.github.io/people/index.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >PEOPLE</a
+        >
+        <a
+          href="https://pringlelab.github.io/publications/index.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >PUBS</a
+        >
+        <a
+          href="https://pringlelab.github.io/links/index.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >LINKS</a
+        >
+        <a
+          href="https://pringlelab.github.io/outreach/index.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >RECENT OUTREACH</a
+        >
       </div>
     </div>
-    
-    
-    
-    
-    
-    
+
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
       <!-- Header/Home -->
       <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo"><span class="w3-hide-small">The Pringle Laboratory</span></h1>
-            <p><font size="5">Ecology &amp;  Evolution of Fungi</font></p>
-       <img src="images/Pringle_Lab_logo.png" alt="musc" width="620" height="600">
-    <p><font size="4">The missions of the Pringle lab are to publish excellent science and have a lot of fun as we make our discoveries: our twin aims are data and joy. We believe the best science happens in a diverse lab whose members come from all walks of life and every corner of the globe, and we welcome you and respect whatever path brought you to us.</font></p>
-       <!-- <img src="images/muscaria.colombia.jpg" alt="musc" width="1132.6" height="869.4"-->
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">The Pringle Laboratory</span>
+        </h1>
+        <p><font size="5">Ecology &amp; Evolution of Fungi</font></p>
+        <img
+          src="images/Pringle_Lab_logo.png"
+          alt="musc"
+          width="620"
+          height="600"
+        />
+        <p>
+          <font size="4"
+            >The missions of the Pringle lab are to publish excellent science
+            and have a lot of fun as we make our discoveries: our twin aims are
+            data and joy. We believe the best science happens in a diverse lab
+            whose members come from all walks of life and every corner of the
+            globe, and we welcome you and respect whatever path brought you to
+            us.</font
+          >
+        </p>
+        <!-- <img src="images/muscaria.colombia.jpg" alt="musc" width="1132.6" height="869.4"-->
       </header>
-    
+
       <!-- About Section -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
         <h2 class="w3-text-light-grey">About Us</h2>
-        <hr style="width:200px" class="w3-opacity"><font size="4">
-        <li><a href="https://www.youtube.com/watch?v=hFsK0Ixb_9g" target="_blank">Pringle Lab Video</a></li>
-        <p>The Pringle laboratory focuses on the biology of species whose life histories and body plans seem very different from our own. Fungi encompass a hetereogeneous array of both microbes and macrobes, and the Pringle laboratory uses fungi as tools to test and elucidate general principles of ecology and evolution.</p></font>
-           
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-        <h2 class="w3-text-light-grey">What We Study</h2>
-        <hr style="width:200px" class="w3-opacity">
-    <br>
-    <table width="100%" align="center" cellpadding="5" cellspacing="5" border="1" style="border-collapse: collapse; border-color: #FFFFFF; border-right-width:0; border-left-width:0; border-top-width:0"><tbody><tr><td>
-    <table width="100%"><tbody><tr>
-    <td align="center" valign="top"><a href="dispersal.php"><img src="images/512x256_13000fps_modified_8fps_20frames_cropped_reduced.gif" alt="Ascobolus spores being launched from ascus." style="border-color:#999999"><br>
-                       <br>
-                       Dispersal</a></td>
-    <td align="center" valign="top"><a href="ecology.php"><img src="images/index_bar_04.jpg" alt="A population of Coccomyces dentatus growing on a leaf. Individuals are delineated by black lines, signalling antagonistic interactions." style="border-color:#999999" width="128" height="128"><br>
-                       <br>
-                       Population Biology of <br>
-                  Modular Organisms </a></td>
-    <td align="center" valign="top"><a href="mutualism.php"><img src="images/index_bar_02.jpg" alt="Spores of arbuscular mycorrhizal fungi from a North Carolina field." style="border-color:#999999" width="128" height="128"><br>
-                       <br>Cooperation and Interactions</a></td>
-    <td align="center" valign="top"><a href="symbiosis.php"><img src="images/copia_tree_button.jpg" alt="A phylogeny of one group of transposable elements in Amanita." style="border-color:#999999" width="128" height="128"><br>
-                       <br>Genetic Architecture<br>of Symbiosis</a></td>
-    <td align="center" valign="top"><a href="invasion.php"><img src="images/amanita_flyer_button_128.png" alt="Mutualism and Invasion" style="border-color:#999999"><br>
-                       <br>Invasion Biology &amp; <br>
-                       Conservation of Fungi</a></td>
-    </tr></tbody></table>
-    </td></tr></tbody></table>
-    
-       
-       
-       
-       
-       
-       
-        
-        <!-- News -->
-           <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-        <h2 class="w3-text-light-grey">The Lab in the News</h2>
-        <hr style="width:200px" class="w3-opacity">
-                
-           <a href="http://pringlelab.botany.wisc.edu/media.php"><img src="images/Huron.jpg" width="280" height="280"></a>
-    <br><br>
-    <a href="http://pringlelab.botany.wisc.edu/media.php"> <em><font size="5">Check us out!</font></em>
-             <br><br></a>
-               <!-- AmanitaBASE -->
-           <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-        <h2 class="w3-text-light-grey">AmanitaBASE</h2>
-        <hr style="width:200px" class="w3-opacity">
-                <a href="http://pringlelab.botany.wisc.edu/amanitabase/#"> <font size="5">Our <em>Amanita</em> collections</font>
-    
-           <br><br></a>
-    
-         
-        <!-- Footer -->
-    
-    <br><center><table width="80%"><tbody><tr><td align="center"><span class="text">Mushroom poisoning? The Wisconsin Poison Center provides telephone assistance to people concerned about poisonings 24 hours a day, 7 days a week, 365 days a year. Call toll-free 1-800-222-1222.</span></td></tr></tbody></table></center>
-    
-    
-    
-    <!-- END PAGE CONTENT -->
+        <hr style="width: 200px" class="w3-opacity" />
+        <font size="4">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=hFsK0Ixb_9g"
+              target="_blank"
+              >Pringle Lab Video</a
+            >
+          </li>
+          <p>
+            The Pringle laboratory focuses on the biology of species whose life
+            histories and body plans seem very different from our own. Fungi
+            encompass a hetereogeneous array of both microbes and macrobes, and
+            the Pringle laboratory uses fungi as tools to test and elucidate
+            general principles of ecology and evolution.
+          </p></font
+        >
+
+        <div
+          class="w3-content w3-justify w3-text-grey w3-padding-64"
+          id="about"
+        >
+          <h2 class="w3-text-light-grey">What We Study</h2>
+          <hr style="width: 200px" class="w3-opacity" />
+          <br />
+          <table
+            width="100%"
+            align="center"
+            cellpadding="5"
+            cellspacing="5"
+            border="1"
+            style="
+              border-collapse: collapse;
+              border-color: #ffffff;
+              border-right-width: 0;
+              border-left-width: 0;
+              border-top-width: 0;
+            "
+          >
+            <tbody>
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center" valign="top">
+                          <a href="dispersal.php"
+                            ><img
+                              src="images/512x256_13000fps_modified_8fps_20frames_cropped_reduced.gif"
+                              alt="Ascobolus spores being launched from ascus."
+                              style="border-color: #999999"
+                            /><br />
+                            <br />
+                            Dispersal</a
+                          >
+                        </td>
+                        <td align="center" valign="top">
+                          <a href="ecology.php"
+                            ><img
+                              src="images/index_bar_04.jpg"
+                              alt="A population of Coccomyces dentatus growing on a leaf. Individuals are delineated by black lines, signalling antagonistic interactions."
+                              style="border-color: #999999"
+                              width="128"
+                              height="128"
+                            /><br />
+                            <br />
+                            Population Biology of <br />
+                            Modular Organisms
+                          </a>
+                        </td>
+                        <td align="center" valign="top">
+                          <a href="mutualism.php"
+                            ><img
+                              src="images/index_bar_02.jpg"
+                              alt="Spores of arbuscular mycorrhizal fungi from a North Carolina field."
+                              style="border-color: #999999"
+                              width="128"
+                              height="128"
+                            /><br />
+                            <br />Cooperation and Interactions</a
+                          >
+                        </td>
+                        <td align="center" valign="top">
+                          <a href="symbiosis.php"
+                            ><img
+                              src="images/copia_tree_button.jpg"
+                              alt="A phylogeny of one group of transposable elements in Amanita."
+                              style="border-color: #999999"
+                              width="128"
+                              height="128"
+                            /><br />
+                            <br />Genetic Architecture<br />of Symbiosis</a
+                          >
+                        </td>
+                        <td align="center" valign="top">
+                          <a href="invasion.php"
+                            ><img
+                              src="images/amanita_flyer_button_128.png"
+                              alt="Mutualism and Invasion"
+                              style="border-color: #999999"
+                            /><br />
+                            <br />Invasion Biology &amp; <br />
+                            Conservation of Fungi</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- News -->
+          <div
+            class="w3-content w3-justify w3-text-grey w3-padding-64"
+            id="about"
+          >
+            <h2 class="w3-text-light-grey">The Lab in the News</h2>
+            <hr style="width: 200px" class="w3-opacity" />
+
+            <a href="http://pringlelab.botany.wisc.edu/media.php"
+              ><img src="images/Huron.jpg" width="280" height="280"
+            /></a>
+            <br /><br />
+            <a href="http://pringlelab.botany.wisc.edu/media.php">
+              <em><font size="5">Check us out!</font></em> <br /><br
+            /></a>
+            <!-- AmanitaBASE -->
+            <div
+              class="w3-content w3-justify w3-text-grey w3-padding-64"
+              id="about"
+            >
+              <h2 class="w3-text-light-grey">AmanitaBASE</h2>
+              <hr style="width: 200px" class="w3-opacity" />
+              <a href="http://pringlelab.botany.wisc.edu/amanitabase/#">
+                <font size="5">Our <em>Amanita</em> collections</font>
+
+                <br /><br
+              /></a>
+
+              <!-- Footer -->
+
+              <br />
+              <center>
+                <table width="80%">
+                  <tbody>
+                    <tr>
+                      <td align="center">
+                        <span class="text"
+                          >Mushroom poisoning? The Wisconsin Poison Center
+                          provides telephone assistance to people concerned
+                          about poisonings 24 hours a day, 7 days a week, 365
+                          days a year. Call toll-free 1-800-222-1222.</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </center>
+
+              <!-- END PAGE CONTENT -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
-    
-    </div></div></div></div></body></html>
+  </body>
+</html>
