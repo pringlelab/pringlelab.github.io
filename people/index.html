@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pringle! Lab UW-Madison</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .w3-sidebar {
+            width: 120px;
+            background: #646569;
+        }
+
+        #main {
+            margin-left: 120px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0;
+            }
+        }
+
+        .team-member {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            margin-right: 15px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .team-member p {
+            margin: 0;
+        }
+
+        .team-member hr {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="w3-black">
+    <!-- Sidebar for navigation (hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <br><br>
+        <!-- Avatar image in top left corner -->
+        <img src="../images/UW_logo.png" alt="UW Logo" style="width: 100%;">
+        <br>
+        <a href="https://pringlelab.github.io/index.html">
+            <p>HOME</p>
+        </a>
+        <br><br>
+        <a href="https://pringlelab.github.io/people/index.html">
+            <p>PEOPLE</p>
+        </a>
+        <br><br>
+        <a href="https://pringlelab.github.io/publications/index.html">
+            <p>PUBS</p>
+        </a>
+        <br><br>
+        <a href="https://pringlelab.github.io/links/index.html">
+            <p>LINKS</p>
+        </a>
+        <br><br>
+        <a href="https://pringlelab.github.io/amanita/amanitaproject.html">
+            <p>GENOMES</p>
+        </a>
+        <br>
+        <a href="https://pringlelab.github.io/outreach/Recent_Outreach.html">
+            <p>RECENT OUTREACH</p>
+        </a>
+    </nav>
+
+    <!-- Navbar for small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="https://pringlelab.github.io/index.html" class="w3-bar-item w3-button" style="width: 25% !important">HOME</a>
+            <a href="https://pringlelab.github.io/people/index.html" class="w3-bar-item w3-button" style="width: 25% !important">PEOPLE</a>
+            <a href="https://pringlelab.github.io/publications/index.html" class="w3-bar-item w3-button" style="width: 25% !important">PUBS</a>
+            <a href="https://pringlelab.github.io/links/index.html" class="w3-bar-item w3-button" style="width: 25% !important">LINKS</a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">The Pringle Laboratory</span></h1>
+        </header>
+
+        <!-- About Section -->
+        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">Principal Investigator</h2>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/AnneAction.jpg" alt="Anne">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Anne Pringle</strong> – <a href="mailto:apringle2@wisc.edu">apringle2@wisc.edu</a></p>
+                    <p class="w3-text-light-grey">Letters & Science Mary Herman Rubinstein Professor</p>
+                    <p class="w3-text-light-grey">Vilas Distinguished Achievement Professor</p>
+                    <p class="w3-text-light-grey">Departments of <a href="https://botany.wisc.edu/staff/pringle-anne/">Botany</a> & <a href="https://bact.wisc.edu/people_profile.php?t=rf&p=apringle2">Bacteriology</a></p>
+                    <p class="w3-text-light-grey">You can download my <a href="documents/CV_modern_Pringle.pdf">current C.V. here</a></p>
+                    <p class="w3-text-light-grey"><a href="https://scholar.google.com/citations?user=J718FGIAAAAJ&hl=en">Google Scholar</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Madison Team Section -->
+        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="madison-team">
+            <h2 class="w3-text-light-grey">The Madison Team</h2>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/Naamon.jpeg" alt="Naamon">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Naamon Peyton</strong> – <a href="mailto:npeyton@wisc.edu">npeyton@wisc.edu</a></p>
+                    <p class="w3-text-light-grey">I am a first-year undergraduate student in the Pringle Lab. My current research is surveying the fungi of UW-Madison's Lakeshore Nature Preserve and working with Savannah Gentry to create a field guide specific to the fungi that I encounter. I am interested in ethnomycology and mycoremediation.</p>
+                </div>
+            </div>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/E251291E-F9AC-4896-AC06-B8D36C51F054_1_201_a.jpeg" alt="Corbin">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Corbin Bryan</strong> – <a href="mailto:bryan7@wisc.edu">bryan6@wisc.edu</a></p>
+                    <p class="w3-text-light-grey">I am a first-year PhD student in the Pringle Lab interested in investigating fungal species delineations, fungal co-invasions, and the evolution of fungal secondary metabolites using genomics approaches. Outside of the lab, I enjoy playing the Viola da Gamba and Guitar, foraging for mushrooms (of course), and reading old literature about dead languages.</p>
+                </div>
+            </div>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/IMG-1536.jpg" alt="Cecelia">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Cecelia Stokes</strong> – <a href="mailto:ckstokes@wisc.edu">ckstokes@wisc.edu</a></p>
+                    <p class="w3-text-light-grey">I am interested in the ecology of invasive ectomycorrhizal fungi. I plan to examine <em>Amanita phalloides</em> interactions with insect populations, native ectomycorrhizal fungi, and mutualistic hosts within their non-native range. Additionally, I hope to investigate if the deadly toxic compounds produced by <em>A. phalloides</em> influence these interactions and their ability to colonize new ecosystems.</p>
+                </div>
+            </div>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/Aishwarya.jpg" alt="Aishwarya">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Aishwarya Veerabahu</strong> – <a href="mailto:veerabahu@wisc.edu">veerabahu@wisc.edu</a></p>
+                    <p class="w3-text-light-grey">Aishwarya earned her B.S. in Biology from the chaparral hills of UC Riverside in Southern California. After graduating, her passion for ecology led her to become a naturalist and an environmental educator. After spending time in the rich forests of the Adirondacks, she was inspired to study fungi and their role in forest health. For her PhD in fungal ecology, she intends to study how microbes can help the restoration and resilience of ecosystems under threat. She currently works on the effects of non-native Golden Oyster fungi on native microbial communities in Wisconsin.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Distributed Team Section -->
+        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="distributed-team">
+            <h2 class="w3-text-light-grey">The Distributed Team</h2>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/Holly2.jpg" alt="Holly">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Holly Elmore</strong> – <a href="mailto:m.holly.elmore@gmail.com">m.holly.elmore@gmail.com</a></p>
+                    <p class="w3-text-light-grey">I am broadly interested in the evolution of eukaryotic genomes. I study genome organization in fungi, particularly as it relates to the bizarre diversity of fungal mating systems. For my thesis, I am investigating the mating loci of several species of Amanita mushrooms in order to learn more about the organization of this genome region and how it may be related to the evolution of the mushroom life cycle. I am currently building and populating Amanitabase, a database of Amanita genomes that will serve as the basis of my dissertation and hopefully lots of other research!</p>
+                </div>
+            </div>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/Cat2.jpg" alt="Cat">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Cat Adams</strong> – <a href="mailto:catadams@berkeley.edu">catadams@berkeley.edu</a></p>
+                    <p class="w3-text-light-grey">Cat Adams is a PhD student at UC Berkeley, researching the role of secondary metabolites in plant-fungal interactions. Her Masters work with Anne examined the evolution of spice tolerance in fungal pathogens of wild chili peppers. For her PhD, Cat is studying the invasion of the deadly poisonous death cap mushroom, <em>Amanita phalloides</em>. She is also passionate about science communication, and has written for Slate and BBC Earth. You can read her personal blog <a href="http://ScienceIsMetal.com">ScienceIsMetal.com</a></p>
+                </div>
+            </div>
+            <hr style="width: 200px" class="w3-opacity">
+            <div class="team-member">
+                <img src="../images/goncal2.jpeg" alt="Susana">
+                <div>
+                    <p class="w3-text-light-grey"><strong>Susana C. Gonçalves</strong> – <a href="mailto:scgoncal@uc.pt">scgoncal@uc.pt</a></p>
+                    <p class="w3-text-light-grey">I am broadly interested in the ecology and evolution of ectomycorrhizal fungi, focusing on the population dynamics of <em>Amanita phalloides</em> and <em>Amanita muscaria</em>, in particular. For my postdoctoral project, I am investigating what might turn an exotic ectomycorrhizal fungus into a successful invader. I am also very involved in fungal conservation and, as of Autumn 2015, I have served as co-chair of the ECCF (European Council for Fungal Conservation).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-justify w3-text-grey w3-padding-64">
+            <hr style="width: 200px" class="w3-opacity">
+            <p class="w3-text-light-grey">
+                <a href="ejected_spores.php">Ejected Spores (Lab Alumni)</a>
+            </p>
+            <hr style="width: 200px" class="w3-opacity">
+            <center>
+                <table width="80%">
+                    <tr>
+                        <td align="center">
+                            <span class="text">Mushroom poisoning? The Wisconsin Poison Center provides telephone assistance to people concerned about poisonings 24 hours a day, 7 days a week, 365 days a year. Call toll-free 1-800-222-1222.</span>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </footer>
+    </div>
+</body>
+
+</html>
