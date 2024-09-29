@@ -8,6 +8,34 @@ h6 {
     font-family: "Montserrat", sans-serif;
 }
 
+.publications-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.publication-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+.publication-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.publication-authors {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.publication-details {
+    color: #555;
+}
+
 /* Custom class for profile pictures */
 .profile-picture img {
     width: 200px; /* Set the desired width */

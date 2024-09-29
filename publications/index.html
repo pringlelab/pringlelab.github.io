@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pringle! Lab UW-Madison</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pringlelab.github.io/styles.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body class="w3-black">
+    <!-- Placeholder for the sidebar -->
+    <div id="sidebar-placeholder"></div>
+    <!-- Load the sidebar using JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("https://pringlelab.github.io/sidebar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("sidebar-placeholder").innerHTML = data;
+                });
+        });
+    </script>
+    <!-- Include the random background script -->
+    <script src="https://pringlelab.github.io/randombackground.js"></script>
+
+    <!-- Main content -->
+    <div class="w3-padding-large w3-dark-transparent" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">The Pringle Laboratory</span></h1>
+        </header>
+
+        <!-- Publications -->
+        <div class="publications-container">
+            <div class="publication-card">
+                <div class="publication-title">Sarracenia pitcher plant-associated microbial communities differ
+                    primarily by host species across a longitudinal gradient</div>
+                <div class="publication-authors">Heil J., C.J. Wolock, N.E. Pierce, A. Pringle, L.S. Bittleston</div>
+                <div class="publication-details">In revision. Environmental Microbiology.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Koch's postulates: Confirming Nannizziopsis guarroi as the cause of
+                    yellow fungal disease in Pogona vitticeps</div>
+                <div class="publication-authors">Gentry S.L., J.M. Lorch, Lankton J.S., A. Pringle</div>
+                <div class="publication-details">2021. Mycologia.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">A precise relationship among Buller's drop, ballistospore and gill
+                    morphologies enables maximal packing of spores within gilled mushrooms</div>
+                <div class="publication-authors">Iapichino M., Y.-W. Wang, S. Gentry, A. Pringle, A. Seminara</div>
+                <div class="publication-details">2021. Mycologia.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Linking genes to traits in fungi</div>
+                <div class="publication-authors">Romero-Olivares A.L., E.W. Morrison, A. Pringle, S.D. Frey</div>
+                <div class="publication-details">2021. Microbial Ecology.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">De novo gene birth, horizontal gene transfer and gene duplication as
+                    sources of new gene families associated with the origin of a symbiosis in the fungal genus Amanita
+                </div>
+                <div class="publication-authors">Wang Y.-W., J. Hess, J.C. Slot, A. Pringle</div>
+                <div class="publication-details">2020. Genome Biology and Evolution.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Timing of fungal spore release dictates survival during atmospheric
+                    transport</div>
+                <div class="publication-authors">Oneto D.L., J. Golan, A. Mazzino, A. Pringle, A. Seminara</div>
+                <div class="publication-details">2020. Proceedings of the National Academy of Sciences (PNAS).</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Fungal seed pathogens of wild chili peppers possess multiple mechanisms
+                    to tolerate capsaicinoids</div>
+                <div class="publication-authors">Adams C.A., K. Zimmerman, K. Fenstermacher, M.G. Thompson, W. Skyrud,
+                    S. Behie, A. Pringle</div>
+                <div class="publication-details">2020. Applied and Environmental Microbiology.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">In Colombia the Eurasian fungus Amanita muscaria is expanding its range
+                    into native, tropical Quercus humboldtii forests</div>
+                <div class="publication-authors">Vargas-Estupiñán N., S. Gonçalves, A.E. Franco-Molano, S. Restrepo, A.
+                    Pringle</div>
+                <div class="publication-details">2019. Mycologia. 132:120-130.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Warming alters fungal communities and litter chemistry with implications
+                    for soil carbon stocks</div>
+                <div class="publication-authors">Morrison, E.W., A. Pringle, L.T.A. van Diepen, A.S. Grandy, J.M.
+                    Melillo, S.D. Frey</div>
+                <div class="publication-details">2019. Soil Biology & Biochemistry. 132:120-130.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Biochemical characterization of TyrA dehydrogenases from Saccharomyces
+                    cerevisiae (Ascomycota) and Pleurotus ostreatus (Basidiomycota)</div>
+                <div class="publication-authors">Lopez-Nieves, S., A. Pringle, H. Maeda</div>
+                <div class="publication-details">2019. Archives of Biochemistry & Biophysics. 655:12-19.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Superior dispersal ability can lead to persistent ecological dominance
+                    throughout succession</div>
+                <div class="publication-authors">Boynton, P.J., C.N. Peterson, A. Pringle</div>
+                <div class="publication-details">2019. Applied and Environmental Microbiology. 85:e02421-18.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Simulated nitrogen deposition favors stress-tolerant fungi with low
+                    potential for decomposition</div>
+                <div class="publication-authors">Morrison, E.W., A. Pringle, L.T.A. van Diepen, S.D. Frey</div>
+                <div class="publication-details">2018. Soil Biology & Biochemistry 125:75-85.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Rapid divergence of genome architectures following the origin of an
+                    ectomycorrhizal symbiosis in the genus Amanita</div>
+                <div class="publication-authors">Hess J., I. Skrede, M. Chaib de Mares, M. Hainault, B. Henrissat, A.
+                    Pringle</div>
+                <div class="publication-details">2018. Molecular Biology and Evolution 35:2786-2804.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Convergence between the microcosms of Southeast Asian and North American
+                    pitcher plants</div>
+                <div class="publication-authors">Bittleston L.S., C. Wolock*, E.Y. Bakhtiar, X.Y. Chan, K.G. Chan, N.E.
+                    Pierce, A. Pringle</div>
+                <div class="publication-details">2018. eLife 2018;7:e36741.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Simulated nitrogen deposition favors stress-tolerant fungi with low
+                    potential for decomposition</div>
+                <div class="publication-authors">Morrison, E.W., S.D. Frey, L.T.A. van Diepen, A. Pringle</div>
+                <div class="publication-details">2018. Soil Biology and Biogeochemistry 125:75-85.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Evolutionary history of plant hosts and fungal symbionts predicts the
+                    strength of mycorrhizal mutualism</div>
+                <div class="publication-authors">Hoeksema J.D., J.D. Bever, S. Chakraborty, V.B. Chaudhary, M. Gardes,
+                    C.A. Gehring, M.M. Hart, E.A. Housworth, W. Kaonongbua, J. Klironomos, M.J. Lajeunesse, J.F. Meadow,
+                    B. Milligan, B. Piculell, A. Pringle, M.A. Rúa, J. Umbanhowar, W. Viechtbauer, Y.W. Wang, G.W.T.
+                    Wilson, P.C. Zee</div>
+                <div class="publication-details">2018. Communications Biology 1, Article number 116.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">A universal growth limit for circular lichens</div>
+                <div class="publication-authors">Seminara A., J. Fritz, M.P. Brenner, A. Pringle</div>
+                <div class="publication-details">2018. Journal of the Royal Society Interface 15: 20180063.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The emerging science of linked plant-fungal invasions</div>
+                <div class="publication-authors">Dickie I., J. Bufford, R. Cobb, M.-L. Desprez-Loustau, G. Grelet, P.
+                    Hulme, J. Klironomos, A. Makiola, M.A. Nuñez, A. Pringle, P. Thrall, L. Waller, N. Williams</div>
+                <div class="publication-details">2017. New Phytologist 215:1314-1332.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Asymmetric drop coalescence launches fungal ballistospores with
+                    directionality</div>
+                <div class="publication-authors">Liu F., R.L. Chavez, S.N. Patek, A. Pringle, J.J. Feng, C.H. Chen</div>
+                <div class="publication-details">2017. Journal of the Royal Society Interface 14:20170083.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Establishing new worlds: the lichens of Petersham</div>
+                <div class="publication-authors">Pringle A.</div>
+                <div class="publication-details">2017. In Arts of Living on a Damaged Planet, eds. A. Tsing, H.A.
+                    Swanson. University of Minnesota Press.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Is meiosis a fundamental cause of inviability among sexual and asexual
+                    plants and animals?</div>
+                <div class="publication-authors">Levitis, D., K. Zimmerman, A. Pringle</div>
+                <div class="publication-details">2017. Proc. Royal Soc. B.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Mechanism of signal propagation in Physarum polycephalum</div>
+                <div class="publication-authors">Alim K., N. Andrew, A. Pringle, M.P. Brenner</div>
+                <div class="publication-details">2017. Proceedings of the National Academy of Sciences (PNAS).</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">A century later, resolving Joseph Grinnell’s "Striking Case of
+                    Adventitious Coloration"</div>
+                <div class="publication-authors">Levitis D., J. Golan, A. Pringle, J. Taylor</div>
+                <div class="publication-details">2017. The Auk: Ornithological Advances.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Long-distance dispersal of fungi</div>
+                <div class="publication-authors">Golan, J., A. Pringle</div>
+                <div class="publication-details">2017. Microbiology Spectrum. (Will also be bound for publication in:
+                    The Fungal Kingdom, ed. N.A.R. Gow and J. Heitman. ASM: Washington D.C.)</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Distinctive fungal communities in an obligate African ant plant mutualism
+                </div>
+                <div class="publication-authors">Baker C.C.M., D.J. Martins, J.N. Pelaez, J.P.J. Billen, A. Pringle,
+                    M.E. Frederickson, N.E. Pierce</div>
+                <div class="publication-details">2017. Proceedings of the Royal Society B.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Carbon isotopes in the saprotrophic fungus Amanita thiersii reveal
+                    increased C3 productivity of Midwestern lawns since 1982</div>
+                <div class="publication-authors">Hobbie E.A., B.A. Schubert, J.M. Craine, E. Linder, A. Pringle</div>
+                <div class="publication-details">2017. Journal of Geophysical Research: Biogeosciences.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Reaching the wind: Boundary layer escape as a constraint on ascomycete
+                    spore shooting</div>
+                <div class="publication-authors">Pringle A., M. Brenner, J. Fritz, M. Roper, A. Seminara</div>
+                <div class="publication-details">2017. In The Fungal Community: Its Organization and Role in the
+                    Ecosystem (Fourth Edition), ed. J. Dighton and J.F. White. Taylor & Francis: Oxford.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Fungi exposed to chronic nitrogen enrichment are less able to decay leaf
+                    litter</div>
+                <div class="publication-authors">van Diepen L.T.A., S.D. Frey, E.A. Landis, E.W. Morrison, A. Pringle
+                </div>
+                <div class="publication-details">2017. Ecology 98:5-11.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Pruning to increase efficiency of particle spread through Physarum
+                    polycephalum networks</div>
+                <div class="publication-authors">Marbach S., K. Alim, N. Andrew, A. Pringle, M.P. Brenner</div>
+                <div class="publication-details">2016. Physical Review Letters 117, 178103.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Chronic nitrogen additions fundamentally restructure the soil fungal
+                    community in a temperate forest</div>
+                <div class="publication-authors">Morrison E.W., S.D. Frey, J.J. Sadowsky, L.T.A. van Diepen, W.K.
+                    Thomas, A. Pringle</div>
+                <div class="publication-details">2016. Fungal Ecology 23:48-57.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Establishing new worlds: the lichens of Petersham</div>
+                <div class="publication-authors">Pringle A.</div>
+                <div class="publication-details">2017. For Arts of Living on a Damaged Planet, ed. A. Tsing. Island
+                    Press: Washington, D.C.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The genus Amanita should not be split</div>
+                <div class="publication-authors">Tulloss R.E., T.W. Kuyper, E.C. Vellinga, Z.L. Yang, R.E. Halling, J.
+                    Geml, S. Sánchez-Ramírez, S. C. Gonçalves, J. Hess, A. Pringle</div>
+                <div class="publication-details">2016. Amanitaceae.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Towards management of invasive ectomycorrhizal fungi</div>
+                <div class="publication-authors">Dickie I.A., M.A. Nuñez, A. Pringle, T. Lebel, S. Tourtellot, P.R.
+                    Johnston</div>
+                <div class="publication-details">2016. Biological Invasions.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Chronic nitrogen additions fundamentally restructure the soil fungal
+                    community in a temperate forest</div>
+                <div class="publication-authors">Morrison, E.W., S.D. Frey, J.J. Sadowsky, L.T.A. van Diepen, W.K.
+                    Thomas, A. Pringle</div>
+                <div class="publication-details">2016. Fungal Ecology.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Beyond animals and plants: dynamic maternal effects in the fungus
+                    Neurospora crassa</div>
+                <div class="publication-authors">Zimmerman K., D. Levitis, A. Pringle</div>
+                <div class="publication-details">2016. Journal of Evolutionary Biology.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Convergence in Multispecies Interactions</div>
+                <div class="publication-authors">Bittleston L., N. E. Pierce, A. M. Ellison, A. Pringle</div>
+                <div class="publication-details">2016. TREE.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Maximizing the mean nearest neighbor distance of a trait to choose among
+                    potential crosses and design a fully crossed mating experiment</div>
+                <div class="publication-authors">Zimmerman K., D. Levitis, E. Addicott, A. Pringle</div>
+                <div class="publication-details">2015. Heredity.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Litter quality affects the suppression of litter decay by simulated
+                    nitrogen deposition</div>
+                <div class="publication-authors">van Diepen L.T.A., S.D. Frey, C.M. Sthultz, E.W. Morrison, R. Minocha,
+                    A. Pringle</div>
+                <div class="publication-details">2015. Ecosphere.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Metabarcoding as a tool for investigating arthropod diversity in
+                    Nepenthes pitcher plants</div>
+                <div class="publication-authors">Bittleston L.S., C.C.M. Baker, L.B. Strominger*, A. Pringle, N.E.
+                    Pierce</div>
+                <div class="publication-details">2015. Austral Ecology.</div>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-title">Names matter: Interdisciplinary research on taxonomy and nomenclature for
+                    ecosystem management</div>
+                <div class="publication-authors">Barron E.S., C. Sthultz, D. Hurley, A. Pringle</div>
+                <div class="publication-details">2015. Progress in Physical Geography.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The shape of fungal ecology: does spore morphology give clues to a
+                    species’ niche?</div>
+                <div class="publication-authors">Pringle, A., E. Vellinga, K. Peay</div>
+                <div class="publication-details">In press. Fungal Ecology 17:213-216. (Commentary.)</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Convergent losses of decay mechanisms and rapid turnover of symbiosis
+                    genes in mycorrhizal mutualists</div>
+                <div class="publication-authors">Kohler, Kuo, Nagy, Morin, Barry, Buscot, Canbäck, Choi, Cichocki, Clum,
+                    Colpaert, Copeland, Costa, Doré, Floudas, Gay, Girlanda, Henrissat, Herrmann, Hess, Högberg,
+                    Johansson, Khouja, LaButti, Lahrmann, Levasseur, Lindquist, Lipzen, Marmeisse, Martino, Murat, Ngan,
+                    Nehls, Plett, Pringle, Ohm, Perotto, Peter, Riley, Rineau, Ruytinx, Salamov, Shah, Sun, Tarkka,
+                    Tritt, Veneault-Fourrey, Zuccaro, MGIC, Tunlid, Grigoriev, Hibbett, Martin</div>
+                <div class="publication-details">2015. Nature Genetics 47:410-415.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Horizontal transfer of carbohydrate metabolism genes into ectomycorrhizal
+                    Amanita</div>
+                <div class="publication-authors">Chaib de Mares, M, J Hess, D Floudas, A Lipzen, C Choi, M Kennedy, IV
+                    Grigoriev, A Pringle</div>
+                <div class="publication-details">2014. New Phytologist.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Transposable element dynamics among asymbiotic and ectomycorrhizal
+                    Amanita fungi</div>
+                <div class="publication-authors">Hess J, I Skrede, BE Wolfe, K LaButti, R Ohm, I Grigoriev, A Pringle
+                </div>
+                <div class="publication-details">2014. Genome Biology and Evolution 6:1564-1578.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The natural histories of species and their genomes: Asymbiotic and
+                    ectomycorrhizal Amanita</div>
+                <div class="publication-authors">Hess J, A Pringle</div>
+                <div class="publication-details">2014. Pages 235-257 in Fungi (Advances in Botanical Research), ed. F
+                    Martin. Academic Press: San Diego.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Quick Guide: Physarum polycephalum</div>
+                <div class="publication-authors">Alim K, N Andrew, A Pringle</div>
+                <div class="publication-details">2013. Current Biology 23:R1082-R1083.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Random network peristalsis in Physarum polycephalum organizes fluid flows
+                    across an individual</div>
+                <div class="publication-authors">Alim K, G Amselem, F Peaudecerf, M Brenner, A Pringle</div>
+                <div class="publication-details">2013. Proceedings of the National Academy of Sciences (PNAS)
+                    110:13306-13311.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">A natural O-ring optimizes the dispersal of fungal spores</div>
+                <div class="publication-authors">Fritz J, A Seminara, M Roper, A Pringle, M Brenner</div>
+                <div class="publication-details">2013. Journal of the Royal Society Interface.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Asthma and the Diversity of Fungal Spores in Air</div>
+                <div class="publication-authors">Pringle A</div>
+                <div class="publication-details">2013. PLoS Pathog 9(6): e1003371.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Bridging mycorrhizal genomics, metagenomics and forest ecology</div>
+                <div class="publication-authors">Marmeisse R, U Nehls, M Öpik, M-A Selosse, A Pringle</div>
+                <div class="publication-details">2013. New Phytologist 198:343-346. (Meeting report.)</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The irreversible loss of a decomposition pathway marks the single origin
+                    of an ectomycorrhizal symbiosis</div>
+                <div class="publication-authors">Wolfe BE, RE Tulloss, A Pringle</div>
+                <div class="publication-details">2012. PLoS ONE 7(7): e39597.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Cooperation among germinating spores facilitates the growth of the fungus
+                    Neurospora crassa</div>
+                <div class="publication-authors">Richard F, L Glass, A Pringle</div>
+                <div class="publication-details">2012. Biology Letters 8:419-422.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Amanita thiersii is a saprotrophic fungus expanding its range in the
+                    United States</div>
+                <div class="publication-authors">Wolfe BE, M Kuo, A Pringle</div>
+                <div class="publication-details">2012. Mycologia 104: 22-33.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Geographically structured host specificity is caused by the range
+                    expansions and host shifts of a symbiotic fungus</div>
+                <div class="publication-authors">Wolfe BE, A Pringle</div>
+                <div class="publication-details">2011. The ISME Journal 4:745-755.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Bacterial Diversity across Individual Lichens</div>
+                <div class="publication-authors">Mushegian AA, CN Peterson, CCM Baker and A Pringle</div>
+                <div class="publication-details">2011. Applied and Environmental Microbiology 77(12): 4249-4252.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The ice nucleation ability of one of the most abundant types of fungal
+                    spores found in the atmosphere</div>
+                <div class="publication-authors">Iannone R, DI Chernoff, A Pringle, ST Martin and AK Bertram</div>
+                <div class="publication-details">2011. Atmospheric Chemistry and Physics 11: 1191-1201.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Fungi and the Anthropocene: Biodiversity discovery in an epoch of loss
+                </div>
+                <div class="publication-authors">Pringle A, E Barron, K Sartor and J Wares</div>
+                <div class="publication-details">2011. Fungal Ecology 2: 121-123.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Mycorrhizae</div>
+                <div class="publication-authors">Pringle A, B Wolfe, EC Vellinga</div>
+                <div class="publication-details">2011. Entry for the Encyclopedia of Invasive Species. University of
+                    California Press.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Dispersal of fungal spores on a cooperatively generated wind</div>
+                <div class="publication-authors">Roper M, A Seminara, MM Bandi, A Cobb, HR Dillard, A Pringle</div>
+                <div class="publication-details">2010. Proceedings of the National Academy of Sciences (PNAS). 107(41):
+                    17474-17479.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Distribution and abundance of the introduced ectomycorrhizal fungus,
+                    Amanita phalloides, in North America</div>
+                <div class="publication-authors">Wolfe BE, F Richard, HB Cross, A Pringle</div>
+                <div class="publication-details">2010. New Phytologist 185: 803-816.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">A meta-analysis of context-dependency in plant response to inoculation
+                    with mycorrhizal fungi</div>
+                <div class="publication-authors">Hoeksema JD, VB Chaudhary, CA Gehring, NC Johnson, J Karst, RT Koide, A
+                    Pringle, C Zabinski, JD Bever, JC Moore, GWT Wilson, JN Klironomos, J Umbanhowar</div>
+                <div class="publication-details">2010. Ecology Letters 13: 394-407.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Mycorrhizal Symbioses and Plant Invasions</div>
+                <div class="publication-authors">Pringle A, JD Bever, M Gardes, JL Parrent, MC Rillig, JN Klironomos
+                </div>
+                <div class="publication-details">2009. Annual Review of Ecology, Evolution, and Systematics 40: 699-715.
+                </div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Quick Guide: Mycorrhizal networks</div>
+                <div class="publication-authors">Pringle A</div>
+                <div class="publication-details">2009. Current Biology 19(18): R838-R839.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Mysterious mycorrhizae? A field trip and classroom experiment to
+                    demystify the symbioses formed between plants and fungi</div>
+                <div class="publication-authors">Johnson NC, VB Chaudhary, JD Hoeksema, JC Moore, A Pringle, JA
+                    Umbanhower, GWT Wilson</div>
+                <div class="publication-details">2009. The American Biology Teacher 71(7): 424-429.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The ectomycorrhizal fungus Amanita phalloides was introduced and is
+                    expanding its range on the West Coast of North America</div>
+                <div class="publication-authors">Pringle A, RI Adams, HB Cross, TD Bruns</div>
+                <div class="publication-details">2009. Molecular Ecology.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Global patterns of ectomycorrhizal introductions</div>
+                <div class="publication-authors">Vellinga EC, BE Wolfe, A Pringle</div>
+                <div class="publication-details">2009. New Phytologist.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Explosively launched spores of ascomycete fungi have drag-minimizing
+                    shapes</div>
+                <div class="publication-authors">Roper M, RE Pepper, MP Brenner, A Pringle</div>
+                <div class="publication-details">2008. PNAS 105(52): 20583–20588.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">A keystone predator controls bacterial diversity in the pitcher plant
+                    (Sarracenia purpurea) microecosystem</div>
+                <div class="publication-authors">Peterson C, S Day, BE Wolfe, A Ellison, R Kolter, A Pringle</div>
+                <div class="publication-details">2008. Environmental Microbiology 10(9): 2257-2266.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Analogous effects of arbuscular mycorrhizal fungi in the laboratory and a
+                    North Carolina field</div>
+                <div class="publication-authors">Pringle A, JD Bever</div>
+                <div class="publication-details">2008. New Phytologist 180: 162-175.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The invasive plant Alliaria petiolata (garlic mustard) inhibits
+                    ectomycorrhizal fungi in its introduced range</div>
+                <div class="publication-authors">Wolfe BE, VL Rodgers, KA Stinson and A Pringle</div>
+                <div class="publication-details">2008. Journal of Ecology 96: 777-783.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Fungal species: thoughts on their recognition, maintenance and selection
+                </div>
+                <div class="publication-authors">Taylor JW, E Turner, A Pringle, J Dettman, H Johannesson</div>
+                <div class="publication-details">2007. Pp. 313-339, In 'Fungi in the Environment'. (British Mycological
+                    Society Symposia No. 25) eds. G.M. Gadd, S.C. Watkinson and P.S. Dyer. Cambridge: Cambridge
+                    University Press.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Last chance to know? Using literature to explore the biogeography and
+                    invasion biology of the death cap mushroom Amanita phalloides (Vaill. Ex Fr. :Fr) Link</div>
+                <div class="publication-authors">Pringle A, EC Vellinga</div>
+                <div class="publication-details">2006. Biological Invasions 8: 1131-1144.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Using the incomplete genome of the ectomycorrhizal fungus Amanita
+                    bisporigera to identify molecular polymorphisms in the related Amanita phalloides</div>
+                <div class="publication-authors">Adams RI, HE Hallen, A Pringle</div>
+                <div class="publication-details">2006. Molecular Ecology Notes 6: 218-220.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Identifying fitness and optimal life-history strategies for an asexual
+                    filamentous fungus</div>
+                <div class="publication-authors">Gilchrist MA, DL Sulsky, A Pringle</div>
+                <div class="publication-details">2006. Evolution 60(5): 970-979.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The promise and the potential consequences of the global transport of
+                    mycorrhizal fungal inoculum</div>
+                <div class="publication-authors">Schwartz MW, JD Hoeksema, CA Gehring, NC Johnson, JN Klironomos, LK
+                    Abbott, A Pringle</div>
+                <div class="publication-details">2006. Ecology Letters 9: 501-515.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">The captured launch of a ballistospore</div>
+                <div class="publication-authors">Pringle A, SN Patek, M Fischer, J Stolze, NP Money</div>
+                <div class="publication-details">2005. Mycologia 97: 866-871.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Cryptic speciation in the cosmopolitan and clonal human pathogenic fungus
+                    Aspergillus fumigatus</div>
+                <div class="publication-authors">Pringle A, DM Baker, JL Platt, JP Wares, JP Latge, JW Taylor</div>
+                <div class="publication-details">2005. Evolution 59: 1886-1899.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Morphological and molecular evidence of arbuscular mycorrhizal fungal
+                    associations in Costa Rican epiphytic bromeliads</div>
+                <div class="publication-authors">Rowe AR, A Pringle</div>
+                <div class="publication-details">2005. Biotropica 37: 245-250.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Immortal fungi</div>
+                <div class="publication-authors">Pringle A</div>
+                <div class="publication-details">2005. Mycena News (popular article for the Mycological Society of San
+                    Francisco).</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Revisiting the rDNA sequence diversity of a natural population of the
+                    arbuscular mycorrhizal fungus Acaulospora colossica</div>
+                <div class="publication-authors">Pringle A, JM Moncalvo, R Vilgalys</div>
+                <div class="publication-details">2003. Mycorrhiza 13: 227-231.</div>
+            </div>
+            <div class="publication-card">
+                <div class="publication-title">Reproductive isolation and phylogenetic divergence in Neurospora:
+                    Comparing methods of species recognition in a model eukaryote</div>
+                <div class="publication-authors">Dettman JR, DJ Jacobson, E Turner, A Pringle, JW Taylor</div>
+                <div class="publication-details">2003. Evolution 57: 2721-2741.</div>
+            </div>
+            <div class="publication-card"></div>
+            <div class="publication-title">Sexual fecundity is correlated to size in the lichenized fungus
+                Xanthoparmelia cumberlandia</div>
+            <div class="publication-authors">Pringle A, D Chen, JW Taylor</div>
+            <div class="publication-details">2003. The Bryologist 106: 221-225.</div>
+        </div>
+        <div class="publication-card">
+            <div class="publication-title">Understanding the fitness of filamentous fungi</div>
+            <div class="publication-authors">Pringle A, JW Taylor</div>
+            <div class="publication-details">2002. Trends in Microbiology 10: 474-481.</div>
+        </div>
+        <div class="publication-card">
+            <div class="publication-title">Divergent phenologies may facilitate the coexistence of arbuscular
+                mycorrhizal fungi in a North Carolina grassland</div>
+            <div class="publication-authors">Pringle A, JD Bever</div>
+            <div class="publication-details">2002. American Journal of Botany 89: 1439-1446.</div>
+        </div>
+        <div class="publication-card">
+            <div class="publication-title">Dynamics within the plant-arbuscular mycorrhizal fungal mutualism: testing
+                the nature of community feedback</div>
+            <div class="publication-authors">Bever JD, A Pringle, P Schultz</div>
+            <div class="publication-details">2002. Pages 267-292 in Mycorrhizal Ecology, ed. M. van der Heijden and I.
+                Sanders. Springer-Verlag: Heidelberg.</div>
+        </div>
+        <div class="publication-card">
+            <div class="publication-title">Arbuscular mycorrhizal fungi: more diverse than meets the eye, and the
+                ecological tale of why</div>
+            <div class="publication-authors">Bever JD, PA Schultz, A Pringle, JB Morton</div>
+            <div class="publication-details">2001. BioScience 51: 923-931.</div>
+        </div>
+        <div class="publication-card">
+            <div class="publication-title">High levels of variation in ribosomal DNA sequences within and among spores
+                of a natural population of the arbuscular mycorrhizal fungus Acaulospora colossica</div>
+            <div class="publication-authors">Pringle A, JM Moncalvo, R Vilgalys</div>
+            <div class="publication-details">2000. Mycologia 92: 259-268.</div>
+        </div>
+        <div class="publication-card">
+            <div class="publication-title">Philosophy and biology: a review of Sex and Death</div>
+            <div class="publication-authors">Pringle A, LC Moyle, J MacLachlan, J HilleRisLambers</div>
+            <div class="publication-details">2000. Complexity 5: 44-45.</div>
+        </div>
+        <div class="publication-card">
+            <div class="publication-title">Effects of autosomal inversions on myotic exchange in distal and proximal
+                regions of the X-chromosomes in a natural population of D. melanogaster</div>
+            <div class="publication-authors">Sniegowski PD, A Pringle, K Hughes</div>
+            <div class="publication-details">1994. Genetical Research 63: 57-62.</div>
+        </div>
+    </div>
+</body>
+
+</html>
