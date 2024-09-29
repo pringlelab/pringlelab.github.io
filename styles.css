@@ -39,7 +39,7 @@ h6 {
 /* Custom class for profile pictures */
 .profile-picture img {
     width: 200px; /* Set the desired width */
-    height: 200px; /* Set the desired height */
+    height: auto; /* Set the desired height */
     object-fit: cover; /* Ensure the image covers the entire area */
 }
 
