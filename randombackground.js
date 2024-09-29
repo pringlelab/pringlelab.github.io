@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Array of background images with correct paths
     const images = [
-        'https://pringlelab.github.io/backgrounds/image1.jpg',
         'https://pringlelab.github.io/backgrounds/boys-in-bristol-photography-Lo_KNBSCYUQ-unsplash.jpg',
         'https://pringlelab.github.io/backgrounds/clyde-gravenberch-uj253l7xPFU-unsplash.jpg',
         'https://pringlelab.github.io/backgrounds/diana-parkhouse-5prKIX4JLO0-unsplash.jpg',
