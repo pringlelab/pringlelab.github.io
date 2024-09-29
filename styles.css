@@ -8,6 +8,13 @@ h6 {
     font-family: "Montserrat", sans-serif;
 }
 
+/* Custom class for profile pictures */
+.profile-picture {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
 .w3-row-padding img {
     margin-bottom: 12px;
 }
@@ -15,6 +22,11 @@ h6 {
 .w3-sidebar {
     width: 120px;
     background: #390a0a;
+}
+
+/* Custom partially transparent dark background */
+.w3-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) for more or less transparency */
 }
 
 /* General styles for the main content */

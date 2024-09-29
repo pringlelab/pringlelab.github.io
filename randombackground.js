@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    
     // Array of background images with correct paths
     const images = [
         'https://pringlelab.github.io/backgrounds/image1.jpg',
