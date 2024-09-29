@@ -9,9 +9,9 @@ h6 {
 }
 
 /* Custom class for profile pictures */
-.profile-picture {
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
+.profile-picture img {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
     object-fit: cover; /* Ensure the image covers the entire area */
 }
 
@@ -20,7 +20,7 @@ h6 {
 }
 
 .w3-sidebar {
-    width: 120px;
+    width: 160px;
     background: #390a0a;
 }
 
