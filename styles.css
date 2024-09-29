@@ -8,6 +8,7 @@ h6 {
     font-family: "Montserrat", sans-serif;
 }
 
+/*publications page css*/
 .publications-container {
     display: flex;
     flex-wrap: wrap;
@@ -15,8 +16,8 @@ h6 {
     padding: 20px;
 }
 .publication-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #3d0000ac;
+    border: 1px solid #00000097;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -33,7 +34,7 @@ h6 {
     margin-bottom: 10px;
 }
 .publication-details {
-    color: #555;
+    color: #ffffff;
 }
 
 /* Custom class for profile pictures */
