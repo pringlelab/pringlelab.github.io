@@ -1,0 +1,26 @@
+# Ignore Visual Studio Code files
+.vscode/
+.vs/
+
+# Ignore node_modules (if you're using npm or yarn)
+node_modules/
+
+# Ignore compiled/minified files
+*.min.js
+*.min.css
+
+# Ignore build/output directories
+/dist/
+/build/
+
+# Ignore GitHub Pages deployment files
+_site/
+.jekyll-cache/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor temporary files
+*.tmp
+*.bak
