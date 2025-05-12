@@ -4,6 +4,8 @@
 
 # Ignore node_modules (if you're using npm or yarn)
 node_modules/
+package-lock.json
+package.json
 
 # Ignore compiled/minified files
 *.min.js
