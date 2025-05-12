@@ -12,15 +12,14 @@
 </head>
 
 <body class="w3-black">
-    <!-- Sidebar Placeholder -->
+    <!-- Placeholder for the sidebar -->
     <div id="sidebar-placeholder"></div>
-
-    <!-- Load Sidebar -->
+    <!-- Load the sidebar using JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            fetch("https://pringlelab.github.io/sidebar.html")
-                .then((response) => response.text())
-                .then((data) => {
+            fetch("/sidebar.html")
+                .then(response => response.text())
+                .then(data => {
                     document.getElementById("sidebar-placeholder").innerHTML = data;
                 });
         });
