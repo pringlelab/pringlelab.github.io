@@ -1,409 +1,621 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pringle! Lab UW-Madison</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="https://pringlelab.github.io/styles.css" />
     <!-- Link to the external CSS file -->
     <style>
-        /* Custom class for profile pictures */
-        .profile-picture {
-            width: 250px;
-            /* Set the desired width */
-            height: 250px;
-            /* Set the desired height */
-            object-fit: cover;
-            /* Ensure the image covers the entire area */
-            border-radius: 50%;
-            /* Make the profile pictures circular */
-            transition: transform 0.3s;
-            /* Smooth transition for hover effect */
-        }
+      /* Custom class for profile pictures */
+      .profile-picture {
+        width: 250px;
+        /* Set the desired width */
+        height: 250px;
+        /* Set the desired height */
+        object-fit: cover;
+        /* Ensure the image covers the entire area */
+        border-radius: 50%;
+        /* Make the profile pictures circular */
+        transition: transform 0.3s;
+        /* Smooth transition for hover effect */
+      }
 
-        .profile-picture:hover {
-            transform: scale(1.3);
-            /* Scale up the image on hover */
-        }
+      .profile-picture:hover {
+        transform: scale(1.3);
+        /* Scale up the image on hover */
+      }
 
-        .team-member {
-            display: flex;
-            align-items: center;
-            background-color: #00000038;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.998);
-            transition: box-shadow 0.3s;
-        }
+      .team-member {
+        display: flex;
+        align-items: center;
+        background-color: #00000038;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.998);
+        transition: box-shadow 0.3s;
+      }
 
-        .team-member:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.663);
-        }
+      .team-member:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.663);
+      }
 
-        .team-member div {
-            margin-left: 20px;
-        }
+      .team-member div {
+        margin-left: 20px;
+      }
 
-        .team-member p {
-            margin: 5px 0;
-        }
+      .team-member p {
+        margin: 5px 0;
+      }
 
-        .team-member a {
-            color: #1e90ff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+      .team-member a {
+        color: #1e90ff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
 
-        .team-member a:hover {
-            color: #ff6347;
-        }
+      .team-member a:hover {
+        color: #ff6347;
+      }
 
-        .team-member strong {
-            font-size: 1.2em;
-        }
+      .team-member strong {
+        font-size: 1.2em;
+      }
 
-        .team-member hr {
-            width: 100%;
-            border: 0;
-            border-top: 1px solid #44444447;
-        }
+      .team-member hr {
+        width: 100%;
+        border: 0;
+        border-top: 1px solid #44444447;
+      }
     </style>
-</head>
+  </head>
 
-<body class="w3-black">
+  <body class="w3-black">
     <!-- Placeholder for the sidebar -->
     <div id="sidebar-placeholder"></div>
     <!-- Load the sidebar using JavaScript -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("/sidebar.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("sidebar-placeholder").innerHTML = data;
-                });
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/sidebar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("sidebar-placeholder").innerHTML = data;
+          });
+      });
     </script>
     <!-- Include the random background script -->
     <script src="https://pringlelab.github.io/randombackground.js"></script>
 
     <!-- Main content -->
     <div class="w3-padding-large w3-dark-transparent" id="main">
-        <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center" id="home">
-            <h1 class="w3-jumbo">
-                <span class="w3-hide-small">The Pringle Laboratory</span>
-            </h1>
-        </header>
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">The Pringle Laboratory</span>
+        </h1>
+      </header>
 
-        <!-- About Section -->
-        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-            <h2 class="w3-text-light-grey">Principal Investigator</h2>
-            <hr style="width: 200px" class="w3-opacity" />
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/AnneAction.jpg" alt="Anne" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Anne Pringle</strong> –
-                        <a href="mailto:apringle2@wisc.edu"><i class="fa fa-envelope"></i> apringle2@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        Letters & Science Mary Herman Rubinstein Professor
-                    </p>
-                    <p class="w3-text-light-grey">
-                        Vilas Distinguished Achievement Professor
-                    </p>
-                    <p class="w3-text-light-grey">
-                        Departments of
-                        <a href="https://botany.wisc.edu/staff/pringle-anne/">Botany</a> &
-                        <a href="https://bact.wisc.edu/people_profile.php?t=rf&p=apringle2">Bacteriology</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        <a href="https://scholar.google.com/citations?user=J718FGIAAAAJ&hl=en"><i
-                                class="fa fa-google"></i> Google Scholar</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Madison Team Section -->
-        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="madison-team">
-            <h2 class="w3-text-light-grey">The Madison Team</h2>
-            <hr style="width: 200px" class="w3-opacity" />
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/cecelia_headshot.jpg"
-                    alt="Cecelia" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Cecelia Stokes</strong> –
-                        <a href="mailto:ckstokes@wisc.edu"><i class="fa fa-envelope"></i> ckstokes@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am a 3rd year PhD candidate, co-advised by Drs. Anne Pringle and Michelle Jusino. I’m studying
-                        the chemical ecology of Amanita phalloides, an invasive and ectomycorrhizal fungus. Broadly, I
-                        am interested in how A. phalloides’ toxins mediate interactions with potentially antagonistic
-                        organisms and how those relationships shift during its invasion in California. I received my
-                        B.S. in General Biology at the University of North Carolina Asheville where I fell in love with
-                        the forests of southern Appalachia and the breadth of fungal biodiversity found within them.
-                        Traipsing around the forest looking for fungi and cool plants is still a favorite pass time,
-                        along with reading, running, and hanging out with my dogs. Here is my <a href="ceceliakstokes.com">personal website</a>
-                    </p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/aishwarya_headshot.jpg"
-                    alt="Aishwarya" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Aishwarya Veerabahu</strong> –
-                        <a href="mailto:veerabahu@wisc.edu"><i class="fa fa-envelope"></i> veerabahu@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I’m Aishwarya, a 3rd year Botany PhD student, studying the ecological impacts, evolution, and social perspectives of invasive Golden
-                        Oyster Mushrooms (<em>Pleurotus citrinopileatus</em>). It’s nuts, but a really fun project. I
-                        got my B.S. in Biology from UC Riverside in Southern California, nested in chaparral hills that sparked
-                        my love for botany. After graduating, my passion for plants and ecology led me to the rich forests
-                        of the Adirondacks, where I found fungi! In all crazy shapes and colors! In my free time, I enjoy 
-                        jamming with my friends, playing with my dog, going on forest walks, making art, biking, and having crazy dreams. 
-                    </p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img class="profile-picture"
-                    src="https://pringlelab.github.io/images/E251291E-F9AC-4896-AC06-B8D36C51F054_1_201_a.jpeg"
-                    alt="Corbin" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Corbin Bryan</strong> –
-                        <a href="mailto:bryan7@wisc.edu"><i class="fa fa-envelope"></i> bryan6@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am a first-year PhD student in the Pringle Lab interested in
-                        investigating fungal species delineations, fungal co-invasions,
-                        and the evolution of fungal secondary metabolites using genomics
-                        approaches. Outside of the lab, I enjoy playing the Viola da Gamba
-                        and Guitar, foraging for mushrooms (of course), and reading old
-                        literature about dead languages.
-                    </p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/soleil_headshot.jpeg"
-                    alt="Soleil" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Soleil Young</strong> –
-                        <a href="mailto:seyoung7@wisc.edu"><i class="fa fa-envelope"></i> seyoung7@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am a joint PhD student in the Currie lab and the Pringle lab
-                        interested in the evolution of sexual reproduction and symbiotic
-                        relationships in fungi. I am studying how genetic variation is
-                        organized in the fungal mutualist of leafcutter ants,
-                        <em>Leucoagaricus gongylophorus</em>. I am also studying the
-                        evolution of the mating type loci in <em>Escovopsis</em>, the
-                        mycoparasite of <em>L. gongylophorus</em>. I love thinking broadly
-                        and critically about the terminology we use to discuss sexual
-                        reproduction, and how that affects the questions we ask. Outside
-                        of the lab I enjoy spending time with my cats and playing video
-                        games. Here's my
-                        <a href="https://soleilyoung.github.io/">personal website</a>.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/Naamon.jpeg" alt="Naamon" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Naamon Peyton</strong> –
-                        <a href="mailto:npeyton@wisc.edu"><i class="fa fa-envelope"></i> npeyton@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am a recently graduated student in the Pringle Lab. My
-                        current research is surveying the fungi of UW-Madison's Lakeshore
-                        Nature Preserve and working with Savannah Gentry to create a field
-                        guide specific to the fungi that I encounter. I am interested in
-                        ethnomycology and mycoremediation.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/michael_headshot.jpg"
-                    alt="Mike" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Michael Hensly</strong> –
-                        <a href="mailto:mdhensley@wisc.edu"><i class="fa fa-envelope"></i> mdhensley@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        Hi, I’m Mike! I am a first year Master’s student studying the
-                        biodiversity of the genus <em>Amanita</em> in Wisconsin. I am interested 
-                        in the immense diversity of organisms this world harbors and how we value
-                        the conservation of them. Ultimately, I wish we could conserve it all but 
-                        that currently isn't feasible.
-                        Outside of the Lab, I enjoy interacting with the outdoors in both a physical
-                        and mental manner. I love to ski, mountian bike, fish, stare at plants, and
-                        identify organisms in the world around me.
-                    </p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/shaneya_headshot.jpg"
-                    alt="Shaneya" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Shaneya Miriyagalla</strong> –
-                        <a href="mailto:miriyagalla@wisc.edu"><i class="fa fa-envelope"></i> miriyagalla@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am Shaneya and I am a first year PhD student in the Pringle Lab.
-                        I am originally from Sri Lanka, and I have a B.Sc. in
-                        Microbiology. I did my master’s (Erasmus Mundus Plant Health) in
-                        Germany, Spain, and France, and worked with
-                        <em>Armillaria</em> species in Europe as my master’s project.
-                    </p>
-                </div>
-            </div>
-        
-
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/sheldon_headshot.png"
-                    alt="sheldon" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Sheldon Stajkovic</strong> –
-                        <a href="mailto:sstajkovic@wisc.edu"><i class="fa fa-envelope"></i> sstajkovic@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am a senior undergraduate student majoring in botany and conservation biology in the Pringle
-                        Lab. My research is focused on working with the International Union for Conservation of Nature
-                        (IUCN) to complete their template for classifying invasive organisms, specifically for the
-                        invasive fungi Amanita Phalloides.
-                    </p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/Aaliyah.jpg"
-                    alt="Aaliyah" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Aaliyah Golden-Whitehead</strong> –
-                        <a href="mailto:goldenwhiteh@wisc.edu"><i class="fa fa-envelope"></i> goldenwhiteh@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        Hi! I am an undergraduate Botany student, expecting to graduate in May 2027. I am working closely with Cecelia Stokes to explore specialized metabolite chemical structures within Amanitas and how they are interconnected with the local ecological communities. I am from Kenosha, Wisconsin and other than a love of plants, I also love music.
-                    </p>
-                </div>
-            </div>
-
-            
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/jason_headshot.png" alt="Jason" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Jason Raiti</strong> –
-                        <a href="mailto:raiti@wisc.edu"><i class="fa fa-envelope"></i> raiti@wisc.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        Howdy, I'm Jason. I am a Masters student in the Pringle Lab. I am
-                        interested in the evolution of fungi and their roles in
-                        ecosystems. I am also the maintainer of this website! If you like
-                        this format and want to copy it yourself, feel free to get the
-                        code
-                        <a href="https://github.com/pringlelab/pringlelab.github.io">here</a>. Check out my
-                        <a href="https://jzraiti.github.io/">personal website</a>. and
-                        past work and let me know what you think! Outside of the lab, I
-                        enjoy surfing the great lakes, reading science and science fiction, and making mead.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Distributed Team Section -->
-        <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="distributed-team">
-            <h2 class="w3-text-light-grey">The Distributed Team</h2>
-            <hr style="width: 200px" class="w3-opacity" />
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/Holly2.jpg" alt="Holly" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Holly Elmore</strong> –
-                        <a href="mailto:m.holly.elmore@gmail.com"><i class="fa fa-envelope"></i>
-                            m.holly.elmore@gmail.com</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am broadly interested in the evolution of eukaryotic genomes. I
-                        study genome organization in fungi, particularly as it relates to
-                        the bizarre diversity of fungal mating systems. For my thesis, I
-                        am investigating the mating loci of several species of Amanita
-                        mushrooms in order to learn more about the organization of this
-                        genome region and how it may be related to the evolution of the
-                        mushroom life cycle. I am currently building and populating
-                        Amanitabase, a database of Amanita genomes that will serve as the
-                        basis of my dissertation and hopefully lots of other research!
-                    </p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/Cat2.jpg" alt="Cat" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Cat Adams</strong> –
-                        <a href="mailto:catadams@berkeley.edu"><i class="fa fa-envelope"></i> catadams@berkeley.edu</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        Cat Adams is a PhD student at UC Berkeley, researching the role of
-                        secondary metabolites in plant-fungal interactions. Her Masters
-                        work with Anne examined the evolution of spice tolerance in fungal
-                        pathogens of wild chili peppers. For her PhD, Cat is studying the
-                        invasion of the deadly poisonous death cap mushroom,
-                        <em>Amanita phalloides</em>. She is also passionate about science
-                        communication, and has written for Slate and BBC Earth. You can
-                        read her personal blog
-                        <a href="http://ScienceIsMetal.com">ScienceIsMetal.com</a>
-                    </p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img class="profile-picture" src="https://pringlelab.github.io/images/goncal2.jpeg" alt="Susana" />
-                <div>
-                    <p class="w3-text-light-grey">
-                        <strong>Susana C. Gonçalves</strong> –
-                        <a href="mailto:scgoncal@uc.pt"><i class="fa fa-envelope"></i> scgoncal@uc.pt</a>
-                    </p>
-                    <p class="w3-text-light-grey">
-                        I am broadly interested in the ecology and evolution of
-                        ectomycorrhizal fungi, focusing on the population dynamics of
-                        <em>Amanita phalloides</em> and <em>Amanita muscaria</em>, in
-                        particular. For my postdoctoral project, I am investigating what
-                        might turn an exotic ectomycorrhizal fungus into a successful
-                        invader. I am also very involved in fungal conservation and, as of
-                        Autumn 2015, I have served as co-chair of the ECCF (European
-                        Council for Fungal Conservation).
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="w3-content w3-justify w3-text-grey w3-padding-64">
-            <hr style="width: 200px" class="w3-opacity" />
+      <!-- About Section -->
+      <section
+        class="w3-content w3-justify w3-text-grey w3-padding-64"
+        id="about"
+      >
+        <h2 class="w3-text-light-grey">Principal Investigator</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/AnneAction.jpg"
+            alt="Anne"
+          />
+          <div>
             <p class="w3-text-light-grey">
-                <a href="https://archive.botany.wisc.edu/pringlelab/ejected_spores.html">Ejected Spores (Lab Alumni)</a>
+              <strong>Anne Pringle</strong> –
+              <a href="mailto:apringle2@wisc.edu"
+                ><i class="fa fa-envelope"></i> apringle2@wisc.edu</a
+              >
             </p>
-            <hr style="width: 200px" class="w3-opacity" />
-        </footer>
-    </div>
-</body>
+            <p class="w3-text-light-grey">
+              Letters & Science Mary Herman Rubinstein Professor
+            </p>
+            <p class="w3-text-light-grey">
+              Vilas Distinguished Achievement Professor
+            </p>
+            <p class="w3-text-light-grey">
+              Departments of
+              <a href="https://botany.wisc.edu/staff/pringle-anne/">Botany</a> &
+              <a
+                href="https://bact.wisc.edu/people_profile.php?t=rf&p=apringle2"
+                >Bacteriology</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              <a
+                href="https://scholar.google.com/citations?user=J718FGIAAAAJ&hl=en"
+                ><i class="fa fa-google"></i> Google Scholar</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <!-- Madison Team Section -->
+      <section
+        class="w3-content w3-justify w3-text-grey w3-padding-64"
+        id="madison-team"
+      >
+        <h2 class="w3-text-light-grey">The Madison Team</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/cecelia_headshot.jpg"
+            alt="Cecelia"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Cecelia Stokes</strong> –
+              <a href="mailto:ckstokes@wisc.edu"
+                ><i class="fa fa-envelope"></i> ckstokes@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am a 3rd year PhD candidate, co-advised by Drs. Anne Pringle and
+              Michelle Jusino. I’m studying the chemical ecology of Amanita
+              phalloides, an invasive and ectomycorrhizal fungus. Broadly, I am
+              interested in how A. phalloides’ toxins mediate interactions with
+              potentially antagonistic organisms and how those relationships
+              shift during its invasion in California. I received my B.S. in
+              General Biology at the University of North Carolina Asheville
+              where I fell in love with the forests of southern Appalachia and
+              the breadth of fungal biodiversity found within them. Traipsing
+              around the forest looking for fungi and cool plants is still a
+              favorite pass time, along with reading, running, and hanging out
+              with my dogs. Here is my
+              <a href="ceceliakstokes.com">personal website</a>
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/aishwarya_headshot.jpg"
+            alt="Aishwarya"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Aishwarya Veerabahu</strong> –
+              <a href="mailto:veerabahu@wisc.edu"
+                ><i class="fa fa-envelope"></i> veerabahu@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I’m Aishwarya, a 3rd year Botany PhD student, studying the
+              ecological impacts, evolution, and social perspectives of invasive
+              Golden Oyster Mushrooms (<em>Pleurotus citrinopileatus</em>). It’s
+              nuts, but a really fun project. I got my B.S. in Biology from UC
+              Riverside in Southern California, nested in chaparral hills that
+              sparked my love for botany. After graduating, my passion for
+              plants and ecology led me to the rich forests of the Adirondacks,
+              where I found fungi! In all crazy shapes and colors! In my free
+              time, I enjoy jamming with my friends, playing with my dog, going
+              on forest walks, making art, biking, and having crazy dreams.
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/E251291E-F9AC-4896-AC06-B8D36C51F054_1_201_a.jpeg"
+            alt="Corbin"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Corbin Bryan</strong> –
+              <a href="mailto:bryan7@wisc.edu"
+                ><i class="fa fa-envelope"></i> bryan6@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am a first-year PhD student in the Pringle Lab interested in
+              investigating fungal species delineations, fungal co-invasions,
+              and the evolution of fungal secondary metabolites using genomics
+              approaches. Outside of the lab, I enjoy playing the Viola da Gamba
+              and Guitar, foraging for mushrooms (of course), and reading old
+              literature about dead languages.
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/soleil_headshot.jpeg"
+            alt="Soleil"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Soleil Young</strong> –
+              <a href="mailto:seyoung7@wisc.edu"
+                ><i class="fa fa-envelope"></i> seyoung7@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am a joint PhD student in the Currie lab and the Pringle lab
+              interested in the evolution of sexual reproduction and symbiotic
+              relationships in fungi. I am studying how genetic variation is
+              organized in the fungal mutualist of leafcutter ants,
+              <em>Leucoagaricus gongylophorus</em>. I am also studying the
+              evolution of the mating type loci in <em>Escovopsis</em>, the
+              mycoparasite of <em>L. gongylophorus</em>. I love thinking broadly
+              and critically about the terminology we use to discuss sexual
+              reproduction, and how that affects the questions we ask. Outside
+              of the lab I enjoy spending time with my cats and playing video
+              games. Here's my
+              <a href="https://soleilyoung.github.io/">personal website</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/Naamon.jpeg"
+            alt="Naamon"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Naamon Peyton</strong> –
+              <a href="mailto:npeyton@wisc.edu"
+                ><i class="fa fa-envelope"></i> npeyton@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am a recently graduated student in the Pringle Lab. My current
+              research is surveying the fungi of UW-Madison's Lakeshore Nature
+              Preserve and working with Savannah Gentry to create a field guide
+              specific to the fungi that I encounter. I am interested in
+              ethnomycology and mycoremediation.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/michael_headshot.jpg"
+            alt="Mike"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Michael Hensly</strong> –
+              <a href="mailto:mdhensley@wisc.edu"
+                ><i class="fa fa-envelope"></i> mdhensley@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              Hi, I’m Mike! I am a first year Master’s student studying the
+              biodiversity of the genus <em>Amanita</em> in Wisconsin. I am
+              interested in the immense diversity of organisms this world
+              harbors and how we value the conservation of them. Ultimately, I
+              wish we could conserve it all but that currently isn't feasible.
+              Outside of the Lab, I enjoy interacting with the outdoors in both
+              a physical and mental manner. I love to ski, mountian bike, fish,
+              stare at plants, and identify organisms in the world around me.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/shaneya_headshot.jpg"
+            alt="Shaneya"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Shaneya Miriyagalla</strong> –
+              <a href="mailto:miriyagalla@wisc.edu"
+                ><i class="fa fa-envelope"></i> miriyagalla@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am Shaneya and I am a first year PhD student in the Pringle Lab.
+              I am originally from Sri Lanka, and I have a B.Sc. in
+              Microbiology. I did my master’s (Erasmus Mundus Plant Health) in
+              Germany, Spain, and France, and worked with
+              <em>Armillaria</em> species in Europe as my master’s project.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/sheldon_headshot.png"
+            alt="sheldon"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Sheldon Stajkovic</strong> –
+              <a href="mailto:sstajkovic@wisc.edu"
+                ><i class="fa fa-envelope"></i> sstajkovic@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am a senior undergraduate student majoring in botany and
+              conservation biology in the Pringle Lab. My research is focused on
+              working with the International Union for Conservation of Nature
+              (IUCN) to complete their template for classifying invasive
+              organisms, specifically for the invasive fungi Amanita Phalloides.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/Aaliyah.jpg"
+            alt="Aaliyah"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Aaliyah Golden-Whitehead</strong> –
+              <a href="mailto:goldenwhiteh@wisc.edu"
+                ><i class="fa fa-envelope"></i> goldenwhiteh@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              Hi! I am an undergraduate Botany student, expecting to graduate in
+              May 2027. I am working closely with Cecelia Stokes to explore
+              specialized metabolite chemical structures within Amanitas and how
+              they are interconnected with the local ecological communities. I
+              am from Kenosha, Wisconsin and other than a love of plants, I also
+              love music.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/jason_headshot.png"
+            alt="Jason"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Jason Raiti</strong> –
+              <a href="mailto:raiti@wisc.edu"
+                ><i class="fa fa-envelope"></i> raiti@wisc.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              Howdy, I'm Jason. I am a Masters student in the Pringle Lab. I am
+              interested in the evolution of fungi and their roles in
+              ecosystems. I am also the maintainer of this website! If you like
+              this format and want to copy it yourself, feel free to get the
+              code
+              <a href="https://github.com/pringlelab/pringlelab.github.io"
+                >here</a
+              >. Check out my
+              <a href="https://jzraiti.github.io/">personal website</a>. and
+              past work and let me know what you think! Outside of the lab, I
+              enjoy surfing the great lakes, reading science and science
+              fiction, and making mead.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Distributed Team Section -->
+      <section
+        class="w3-content w3-justify w3-text-grey w3-padding-64"
+        id="distributed-team"
+      >
+        <h2 class="w3-text-light-grey">The Distributed Team</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/Holly2.jpg"
+            alt="Holly"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Holly Elmore</strong> –
+              <a href="mailto:m.holly.elmore@gmail.com"
+                ><i class="fa fa-envelope"></i> m.holly.elmore@gmail.com</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am broadly interested in the evolution of eukaryotic genomes. I
+              study genome organization in fungi, particularly as it relates to
+              the bizarre diversity of fungal mating systems. For my thesis, I
+              am investigating the mating loci of several species of Amanita
+              mushrooms in order to learn more about the organization of this
+              genome region and how it may be related to the evolution of the
+              mushroom life cycle. I am currently building and populating
+              Amanitabase, a database of Amanita genomes that will serve as the
+              basis of my dissertation and hopefully lots of other research!
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/Cat2.jpg"
+            alt="Cat"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Cat Adams</strong> –
+              <a href="mailto:catadams@berkeley.edu"
+                ><i class="fa fa-envelope"></i> catadams@berkeley.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              Cat Adams is a PhD student at UC Berkeley, researching the role of
+              secondary metabolites in plant-fungal interactions. Her Masters
+              work with Anne examined the evolution of spice tolerance in fungal
+              pathogens of wild chili peppers. For her PhD, Cat is studying the
+              invasion of the deadly poisonous death cap mushroom,
+              <em>Amanita phalloides</em>. She is also passionate about science
+              communication, and has written for Slate and BBC Earth. You can
+              read her personal blog
+              <a href="http://ScienceIsMetal.com">ScienceIsMetal.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/goncal2.jpeg"
+            alt="Susana"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Susana C. Gonçalves</strong> –
+              <a href="mailto:scgoncal@uc.pt"
+                ><i class="fa fa-envelope"></i> scgoncal@uc.pt</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              I am broadly interested in the ecology and evolution of
+              ectomycorrhizal fungi, focusing on the population dynamics of
+              <em>Amanita phalloides</em> and <em>Amanita muscaria</em>, in
+              particular. For my postdoctoral project, I am investigating what
+              might turn an exotic ectomycorrhizal fungus into a successful
+              invader. I am also very involved in fungal conservation and, as of
+              Autumn 2015, I have served as co-chair of the ECCF (European
+              Council for Fungal Conservation).
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/SavannahGentry.jpg"
+            alt="Savannah Gentry"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Savannah Gentry</strong> –
+              <a href="mailto:savannahlg3@gmail.com"
+                ><i class="fa fa-envelope"></i> savannahlg3@gmail.com</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              With a focus on fungal pathogens of wildlife, Savannah spent her
+              time in the Pringle Lab in physiological experiments with snake
+              fungal disease (<em>Ophidiomyces ophiodiicola</em>) and yellow
+              fungal disease (<em>Nannizziopsis guarroi</em>), discovering a
+              wider breadth of host specificity of reptilian fungal pathogens
+              than previously known. From one end of research to another, after
+              completing her doctorate in the Pringle Lab, Savannah currently
+              works as a Research Administrator handling the financial and
+              budgeting side of research between non-federal and federal funding
+              at the University of Wisconsin-Madison within the Laboratory of
+              Genetics.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/JacobGolan.jpeg"
+            alt="Jacob Golan"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Jacob Golan, PhD, JD</strong> –
+              <a href="mailto:jacobjgolan@gmail.com"
+                ><i class="fa fa-envelope"></i> jacobjgolan@gmail.com</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              Jacob is a patent attorney specializing in strategic intellectual
+              property portfolio development for fungal innovations, among
+              others. He also provides pro bono counsel to Indigenous and local
+              communities to protect traditional knowledge and biocultural
+              resources.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/DennyWang.jpg"
+            alt="Yen-Wen Denny Wang"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Yen-Wen Denny Wang, PhD</strong> –
+              <a href="mailto:yen-wen.wang@yale.edu"
+                ><i class="fa fa-envelope"></i> yen-wen.wang@yale.edu</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              Denny is interested in biological interactions between fungi and
+              plants. He uses bioinformatics and genomics to understand the
+              evolutionary history of ectomycorrhizal <em>Amanita</em> and
+              invasive death caps. He is currently at Yale School of Public
+              Health as a post-doctoral researcher studying the evolution of
+              gene expression and regulation in Sordariomycetes.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            class="profile-picture"
+            src="https://pringlelab.github.io/images/NoraDunkirk.jpg"
+            alt="Nora Dunkirk"
+          />
+          <div>
+            <p class="w3-text-light-grey">
+              <strong>Nora Dunkirk, PhD</strong> –
+              <a href="mailto:ncdunkirk@gmail.com"
+                ><i class="fa fa-envelope"></i> ncdunkirk@gmail.com</a
+              >
+            </p>
+            <p class="w3-text-light-grey">
+              In the Pringle lab, Nora pursued studies of fungal ecology and
+              conservation. She used genomics, geographic distributions, and
+              comparative morphology to test the invasive nature of
+              <em>Amanita thiersii</em> in North America. In a large laboratory
+              experiment, Nora measured physiological responses of decomposer
+              fungi to test their ability to persist in nitrogen-polluted
+              environments. Now located in Portland, OR, she is the conservation
+              Mycologist for the Oregon Natural Heritage program (ORBIC) at
+              Portland State University, monitoring rare fungi and plants and
+              partnering with agencies for their conservation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="w3-content w3-justify w3-text-grey w3-padding-64">
+        <hr style="width: 200px" class="w3-opacity" />
+        <p class="w3-text-light-grey">
+          <a
+            href="https://archive.botany.wisc.edu/pringlelab/ejected_spores.html"
+            >Ejected Spores (Lab Alumni)</a
+          >
+        </p>
+        <hr style="width: 200px" class="w3-opacity" />
+      </footer>
+    </div>
+  </body>
 </html>
