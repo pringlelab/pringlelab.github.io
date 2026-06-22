@@ -132,3 +132,48 @@ strong {
 .media-item:hover {
     transform: translateY(-5px);
 }
+
+/* Publications list styles (hanging indentation)
+   Note: HTML uses class "publications-list" so include that as an alias. */
+.publication-list,
+.publications-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px; /* align with other content padding */
+}
+.publication-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding-left: 1.6rem; /* indent block so secondary lines sit under title */
+}
+/* Pull the title back to the left to create a hanging indent */
+.publication-item .publication-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.12rem  -1.6rem; /* negative left margin pulls title out of the indent */
+}
+.publication-item .publication-authors,
+.publication-item .publication-details,
+.publication-item .publication-note {
+    margin: 0 0 0.12rem 0; /* these lines inherit the li padding-left */
+    color: #d0d0d0;
+    font-size: 0.95rem;
+}
+.publication-item .publication-details {
+    color: #bdbdbd;
+    font-size: 0.9rem;
+}
+.publication-item .publication-note {
+    color: #cfcfcf;
+    font-size: 0.88rem;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .publication-item {
+        padding-left: 1.0rem;
+    }
+    .publication-item .publication-title {
+        margin-left: -1.0rem;
+    }
+}
