@@ -94,6 +94,47 @@ strong {
     }
 }
 
+/* Reduce vertical gap above the About section so it's closer to the header */
+#about.w3-padding-64 {
+    padding-top: 16px; /* default w3-padding-64 uses 64px; this reduces it */
+    padding-bottom: 32px; /* keep some bottom padding */
+}
+
+@media (max-width: 600px) {
+    #about.w3-padding-64 { padding-top: 12px; padding-bottom: 20px; }
+}
+
+/* Reduce header bottom spacing so following sections sit closer */
+#home {
+    padding-bottom: 8px; /* smaller than default */
+}
+#home p.w3-large {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+#home img.site-logo {
+    margin: 0.25rem auto !important; /* tighten logo spacing; override inline style */
+    display: block;
+}
+
+/* Stronger overrides to remove remaining gap between header and About */
+#home {
+    padding-bottom: 0 !important;
+}
+#home h1 {
+    margin-bottom: 0 !important;
+}
+#home p.w3-large {
+    margin-top: 0.1rem !important;
+    margin-bottom: 0.1rem !important;
+}
+#home img.site-logo {
+    margin: 0.1rem auto !important;
+}
+#about.w3-padding-64 {
+    padding-top: 6px !important;
+}
+
 /* Media Grid Styling */
 .media-grid {
     display: grid;
